@@ -16,7 +16,7 @@ a:hover{
   color: rgb(215, 18, 87);
 }
 .superSizer{
-  background-image: url("/Users/Shampopencil/Desktop/GROUPPROJECT2/GroupProjectTwo/heroPics/backgroundComicsMarvel.jpeg");
+  background-image: url("../../heroPics/backgroundComicsMarvel.jpeg");
   width: 100%;
   height: 100%;
   position: fixed;
