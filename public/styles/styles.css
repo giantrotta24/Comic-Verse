@@ -30,4 +30,6 @@ a:hover{
 }
 .mylist{
   display:none;
+  overflow: auto;
+  color: blue;
 }
