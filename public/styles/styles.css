@@ -33,3 +33,9 @@ a:hover{
   overflow: auto;
   color: blue;
 }
+
+.mySlides {display:none;
+  overflow: auto;
+/* float: right; */
+vertical-align: right;
+}
