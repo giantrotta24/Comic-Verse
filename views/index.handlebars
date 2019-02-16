@@ -33,7 +33,7 @@
     Character Name:<br>
     <input type="text" id="name"><br>
     <br>
-    <input id="submit" type="submit" value="Submit">
+    <input id="submithero" type="submit" value="Submit">
   </form>
   <span id="test"></span>
 </div>
@@ -41,7 +41,7 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="/js/index.js"></script>
 <script>
-  $("#submit").on("click", (event) => {
+  $("#submithero").on("click", (event) => {
     event.preventDefault();
     let response;
     let name = $("#name").val().trim();
