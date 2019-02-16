@@ -33,3 +33,37 @@ a:hover{
   overflow: auto;
   color: blue;
 }
+
+#home{
+  color: rgb(159, 237, 232);
+  font-size: 30px;
+}
+
+#divBar{
+  color: #0df20d;
+}
+
+#navs{
+  color: #18f418;
+  font-size: 30px;
+}
+
+#dropMenu{
+  color: #00e500;
+  background-color: black;
+}
+
+#navbarDropdown{
+  color: #12e812;
+  font-size: 30px;
+}
+
+#drops{
+  color: #00e500;
+  background-color: rgb(36, 34, 34);
+}
+
+#smallNavs{
+  color: #00e500;
+  font-size: 19px;
+}
