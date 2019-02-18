@@ -4,7 +4,11 @@ module.exports = function(sequelize, DataTypes) {
         secretIdentity: DataTypes.STRING,
         earlyLife: DataTypes.TEXT,
         currentHistory: DataTypes.TEXT,
-        personalLife: DataTypes.TEXT
+        personalLife: DataTypes.TEXT,
+        approved: {
+            type: DataTypes.BOOLEAN,
+            defaultValue: false
+        }
     });
     return Heroes;
 };
