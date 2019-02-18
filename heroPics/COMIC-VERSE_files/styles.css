@@ -15,7 +15,6 @@ a{
 a:hover{
   color: rgb(215, 18, 87);
 }
-
 .superSizer{
   background-image: url("../../heroPics/backgroundComicsMarvel.jpeg");
   width: 100%;
@@ -29,15 +28,19 @@ a:hover{
   background-size: cover;
   top: 0;
 }
-.topPageJumbo{
-  background-color: rgb(201, 213, 216);
-}
 .mylist{
+  display:none;
+  overflow: auto;
+  color: blue;
+}ß
+
+.mySlides {
   display:none;
   width: 200px;
   height: 300px;
+  /* overflow: auto; */
+/* float: right; */
 }
-
 #home{
   color: rgb(159, 237, 232);
   font-size: 30px;
