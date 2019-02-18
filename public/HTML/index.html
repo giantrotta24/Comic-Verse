@@ -25,7 +25,7 @@
             <div class="collapse navbar-collapse" id="divBar">
                 <ul class="navbar-nav mr-auto" id="ulForBar">
                     <li class="nav-item active">
-                        <a class="nav-link" id="home" href="#">Home&nbsp <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" id="home" href="/Users/Shampopencil/Desktop/GROUPPROJECT2/GroupProjectTwo/public/HTML/index.html">Home&nbsp <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" id="navs" href="#">&nbspHeroes</a>
@@ -53,10 +53,10 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" id="smallNavs" href="#">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspLOGIN</a>
+                        <a class="nav-link" id="smallNavs" href="../../public/HTML/login_Page.html">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspLOGIN</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="smallNavs" href="#">&nbspSIGN-UP</a>
+                        <a class="nav-link" id="smallNavs" href="../../public/HTML/sign_up.html">&nbspSIGN-UP</a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
@@ -83,22 +83,25 @@
                 <img class="mySlides2"
                     src="/Users/Shampopencil/Desktop/GROUPPROJECT2/GroupProjectTwo/heroPics/xmenCover.jpeg" style="width: 350px;
                         height: 430px;">
-                <!-- <img class="myslides2" src="/Users/Shampopencil/Desktop/GROUPPROJECT2/GroupProjectTwo/heroPics/theKillingJoke.jpeg" style="width:100%"> -->
+                <img class="mySlides2"
+                    src="/Users/Shampopencil/Desktop/GROUPPROJECT2/GroupProjectTwo/heroPics/hellboyPic.jpg" style="width: 350px;
+                        height: 430px;">
             </div>
 
             <h1 class="display-4">COMIC-VERSE</h1>
             <!-- <p class="lead"></p>
             <hr class="my-4"> -->
-            <p>Welcome the COMIC-VERSE!</p>
-            <p>Find any Character with ease!</p>
-            <br/>
-            <br/> 
-            <br/>
-            <br/>
-            <br/>
-            <br/>
+            <h3>Welcome the COMIC-VERSE!</h3>
+            <h3>Find any Character with ease!</h3>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
         </div>
-       <br/>
+        <br />
         <h2 class="w3-center">Comic Trivia</h2>
 
         <div class="w3-content float-none">
@@ -132,8 +135,10 @@
         </div>
         <div class="row">
             <div class="col">
+                <hr>
                 <br />
-                <h1>HERO & VILLAIN OF THE DAY</h1>
+                <br/>
+                <h1 style="text-align: center;">HERO & VILLAIN OF THE DAY</h1>
                 <br />
             </div>
         </div>
@@ -165,36 +170,36 @@
         </div>
         <!-- Hero of the day
         Villian of the day -->
-        </div>
-        <script>
-            var slideIndex = 0;
-            carousel();
+    </div>
+    <script>
+        var slideIndex = 0;
+        carousel();
 
-            function carousel() {
-                var i;
-                var x = document.getElementsByClassName("mySlides");
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";
-                }
-                slideIndex++;
-                if (slideIndex > x.length) { slideIndex = 1 }
-                x[slideIndex - 1].style.display = "block";
-                setTimeout(carousel, 11000);
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
             }
-            var slideIndex2 = 0;
-            carousel2();
-            function carousel2() {
-              var i;
-              var x = document.getElementsByClassName("mySlides2");
-              for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none"; 
-              }
-              slideIndex2++;
-              if (slideIndex2 > x.length) {slideIndex2 = 1} 
-              x[slideIndex2-1].style.display = "block"; 
-              setTimeout(carousel2, 5000); 
+            slideIndex++;
+            if (slideIndex > x.length) { slideIndex = 1 }
+            x[slideIndex - 1].style.display = "block";
+            setTimeout(carousel, 11000);
+        }
+        var slideIndex2 = 0;
+        carousel2();
+        function carousel2() {
+            var i;
+            var x = document.getElementsByClassName("mySlides2");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
             }
-        </script>
+            slideIndex2++;
+            if (slideIndex2 > x.length) { slideIndex2 = 1 }
+            x[slideIndex2 - 1].style.display = "block";
+            setTimeout(carousel2, 4000);
+        }
+    </script>
 
 
     
@@ -209,7 +214,7 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <!-- <script src="index.js"></script> -->
+    <script src="../../models/index.js"></script> 
 </body>
 
 
