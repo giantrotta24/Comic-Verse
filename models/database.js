@@ -42,6 +42,10 @@ module.exports = (sequelize, DataTypes) => {
         admin: {
             type: DataTypes.BOOLEAN,
             defaultValue: false
+        },
+        banned: {
+            type: DataTypes.BOOLEAN,
+            defaultValue: false
         }
     });
     return Users;
