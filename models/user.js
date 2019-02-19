@@ -1,5 +1,10 @@
 module.exports = (sequelize, DataTypes) => {
-    const Users = sequelize.define("Users", {
+    const User = sequelize.define("user", {
+        id: {
+            autoIncrement: true,
+            primaryKey: true,
+            type: DataTypes.INTEGER
+        },
         name: {
             type: DataTypes.STRING,
             validate: {
@@ -38,6 +43,23 @@ module.exports = (sequelize, DataTypes) => {
                     msg: "Location must be at least 2 characters in length"
                 }
             },
+        },
+        email: {
+            type: DataTypes.STRING,
+            validate: {
+                isEmail: true
+            }
+        },
+        password: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
+        last_login: {
+            type: DataTypes.DATE
+        }, 
+        status: {
+            type: DataTypes.ENUM('active', 'inactive'),
+            defaultValue: 'active'
         },
         admin: {
             type: DataTypes.BOOLEAN,
