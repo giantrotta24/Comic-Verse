@@ -13,8 +13,10 @@
 <body>
     <!--div\/ for background basically***************-->
     <div class="superSizer"></div>
-    <div class="container">
-        <!-- Content here -->
+
+    <div class="container transitionBG">
+        
+        <!-- THE BOOTSTRAP FOR THE NAV BAR -->
         <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
             <!-- <a class="navbar-brand" href="#">Navbar</a> -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -66,6 +68,7 @@
             </div>
         </nav>
         <br />
+        <!-- INTRO AND SLIDESHOW OF COMICBOOK COVERS -->
         <div class="jumbotron topPageJumbo">
             <div class="w3-content w3-section" style="max-width:500px; float: right; overflow: auto;">
                 <img class="mySlides2"
@@ -91,6 +94,9 @@
             <h1 class="display-4">COMIC-VERSE</h1>
             <!-- <p class="lead"></p>
             <hr class="my-4"> -->
+
+            
+            <!-- INTRO OF THE HOME-PAGE -->
             <h3>Welcome the COMIC-VERSE!</h3>
             <h3>Find any Character with ease!</h3>
             <br />
@@ -101,7 +107,13 @@
             <br />
             <br />
         </div>
+        <!-- END OF JUMBOTRON -->
         <br />
+        <hr>
+        <br />
+
+        <!-- THE COMIC TRIVIA SECTION -->
+        <div class="container triviaDiv">
         <h2 class="w3-center">Comic Trivia</h2>
 
         <div class="w3-content float-none">
@@ -133,15 +145,24 @@
             <img class="mySlides" src="../../heroPics/batmanHoldingCatWoman.jpeg" style="width: 350px;
             height: 430px;">
         </div>
+        </div>
+        <!-- END OF TRIVIA SECTION -->
+        <br/>
+        <hr>
+        <br/>
+
+        <!-- HERO AND VILLAIN OF THE DAY SECTION -->
+        <div class="container heroAndVillainDiv">
         <div class="row">
             <div class="col">
-                <hr>
+
                 <br />
                 <br/>
                 <h1 style="text-align: center;">HERO & VILLAIN OF THE DAY</h1>
                 <br />
             </div>
         </div>
+        <div class="heroAndVillainDiv">
         <div class="card" style="width: 18rem; float: left;">
             <img class="card-img-top" src="../../heroPics/ironMan.jpeg" alt="Card image cap">
             <div class="card-body">
@@ -168,9 +189,12 @@
                 <a href="#">Go to Bio</a>
             </div>
         </div>
+        </div>
+        </div>
         <!-- Hero of the day
         Villian of the day -->
     </div>
+    <!-- SCRIPT OF THE SLIDESHOWS OF THE COVER AND TRIVIA SECTIONS(WE CAN MOVE IT SOMEWHERE ELSE IN THE FUTUTE) -->
     <script>
         var slideIndex = 0;
         carousel();
