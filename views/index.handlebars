@@ -40,20 +40,3 @@
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="/js/index.js"></script>
-<script>
-  $("#submithero").on("click", (event) => {
-    event.preventDefault();
-    let response;
-    let name = $("#name").val().trim();
-    let queryURL = "https://superheroapi.com/api/10155889300081697/search/" + name;
-
-
-    $.ajax({
-      url: queryURL,
-      method: "GET"
-    }).then((apiResponse) => {
-      response = apiResponse;
-      console.log(response);
-    });
-  });
-</script>
