@@ -1,7 +1,10 @@
 
 /* ALOT OF SELECTOR/PROPS SO MAKE A NEW FILE ******************** */
 
-
+#home:hover, #navs:hover, #navbarDropdown:hover, #drops:hover, #smallNavs:hover{
+  background-color: rgb(45, 40, 40);
+  color:  #3ef43e;
+}
 .list-group-item {
   line-height: 2.5;
 }
@@ -20,6 +23,24 @@ a:hover{
   color: rgb(215, 18, 87);
 }
 
+/* SUPERHERO COLOR ON HOVERING ON THE NAVS (TESTING) */
+/* #home:hover{
+  background-color: black;
+  color: rgb(255,242,0);
+}
+#heroOnNav:hover{
+  background-color:rgb(230, 60, 71);
+  color:rgb(39, 50, 123);
+}
+#villainOnNav:hover {
+  background-color: rgb(83, 48, 128);
+  color: #16ff16;
+}
+#clashOnNav:hover{
+  background-color: rgb(165,24,24);
+  color: rgb(230, 233, 64);
+  
+} */
 .superSizer{
   background-image: url("../../heroPics/indexbackgroundAgain.jpg");
   width: 100%;

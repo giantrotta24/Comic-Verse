@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>COMIC-VERSE</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="../styles/profile.css">
+    <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+</head>
+
+<body>
+<div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+                <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="divBar">
+                    <ul class="navbar-nav mr-auto" id="ulForBar">
+                        <li class="nav-item active">
+                            <a class="nav-link" id="home" href="../../public/HTML/index.html">Home&nbsp <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="navs" href="../../public/HTML/Hero_Page.html">&nbspHeroes&nbsp</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="navs" href="../../public/HTML/Villain_Page.html">&nbspVillains&nbsp</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                               <!--- <div id="dropdownNav">-->&nbspDropdown&nbsp<!---</div>-->
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropMenu">
+                                <a class="dropdown-item" id="drops" href="../../public/HTML/profile_page.html">Profile</a>
+                                <a class="dropdown-item" id="drops" href="../../public/HTML/editProfile.html">Edit Profile</a>
+                                <!-- <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" id="drops" href="#">Contact-Us</a> -->
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="navs" href="#">&nbspCLASH</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="navs" href="#">&nbspAdd Hero/Villain</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" id="smallNavs" href="../../public/HTML/login_Page.html">&nbsp&nbsp<!---&nbsp&nbsp&nbsp-->LOGIN&nbsp</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="smallNavs" href="../../public/HTML/sign_up.html">&nbspSIGN-UP&nbsp</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+            <br/>
+    <div class="row">
+          <div class="col-md-12 text-center ">
+            <div class="panel panel-default">
+              <div class="userprofile social ">
+                <div class="userpic"> <img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="" class="userpicimg"> </div>
+                <h3 class="username">Lucky Sans</h3>
+                <p>Gujarat, India</p>
+                <div class="socials tex-center"> <a href="" class="btn btn-circle btn-primary ">
+                <i class="fa fa-facebook"></i></a> <a href="" class="btn btn-circle btn-danger ">
+                <i class="fa fa-google-plus"></i></a> <a href="" class="btn btn-circle btn-info ">
+                <i class="fa fa-twitter"></i></a> <a href="" class="btn btn-circle btn-warning "><i class="fa fa-envelope"></i></a>
+                </div>
+              </div>
+              <div class="col-md-12 border-top border-bottom">
+                <ul class="nav nav-pills pull-left countlist" role="tablist">
+                  <li role="presentation">
+                    <h3>1452<br>
+                      <small>Follower</small> </h3>
+                  </li>
+                  <li role="presentation">
+                    <h3>245<br>
+                      <small>Following</small> </h3>
+                  </li>
+                  <li role="presentation">
+                    <h3>5000<br>
+                      <small>Activity</small> </h3>
+                  </li>
+                </ul>
+                <button class="btn btn-primary followbtn">Follow</button>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+          <!-- /.col-md-12 -->
+          <div class="col-md-4 col-sm-12 pull-right">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h1 class="page-header small">Personal Details</h1>
+                <p class="page-subtitle small">Limited information is visible</p>
+              </div>
+              <div class="col-md-12 photolist">
+                <div class="row">
+                  <div class="col-sm-3 col-xs-3"><img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="" alt=""> </div>
+                  <div class="col-sm-3 col-xs-3"><img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="" alt=""> </div>
+                  <div class="col-sm-3 col-xs-3"><img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="" alt=""> </div>
+                  <div class="col-sm-3 col-xs-3"><img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="" alt=""> </div>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h1 class="page-header small">Worked with many domain</h1>
+                <p class="page-subtitle small">Like to work fr different business</p>
+              </div>
+              <div class="col-md-12">
+                <ul class="list-group">
+                  <li class="list-group-item"><span class="fa fa-male"></span> Worked with 1000+ people</li>
+                  <li class="list-group-item"><span class="fa fa-institution"></span> 60+ offices</li>
+                  <li class="list-group-item"><span class="fa fa-user"></span> 50000+ satify customers</li>
+                  <li class="list-group-item"><span class="fa fa-clock-o"></span> Work hours many and many still counting</li>
+                  <li class="list-group-item"><span class="fa fa-heart"></span> Customer satisfaction for servics</li>
+                </ul>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h1 class="page-header small">What others are saying </h1>
+                <p class="page-subtitle small">Express your self, Express to other</p>
+              </div>
+              <div class="col-md-12">
+                <div class="media">
+                  <div class="media-left"> <a href="javascript:void(0)"> <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" class="media-object"> </a> </div>
+                  <div class="media-body">
+                    <h4 class="media-heading">Lucky Sans</h4>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio. </div>
+                </div>
+                <div class="media">
+                  <div class="media-left"> <a href="javascript:void(0)"> 
+                  <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" class="media-object"> </a> </div>
+                  <div class="media-body">
+                    <h4 class="media-heading">John Doe</h4>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio. </div>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h1 class="page-header small">Recently Connected</h1>
+                <p class="page-subtitle small">You have recemtly connected with 34 friends</p>
+              </div>
+              <div class="col-md-12">
+                <div class="memberblock"> <a href="" class="member"> <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="">
+                  <div class="memmbername">Ajay Sriram</div>
+                  </a> <a href="" class="member"> <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="">
+                  <div class="memmbername">Rajesh Sriram</div>
+                  </a> <a href="" class="member"> <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="">
+                  <div class="memmbername">Manish Sriram</div>
+                  </a> <a href="" class="member"> <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="">
+                  <div class="memmbername">Chandra Amin</div>
+                  </a> <a href="" class="member"> <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="">
+                  <div class="memmbername">John Sriram</div>
+                  </a> <a href="" class="member"> <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="">
+                  <div class="memmbername">Lincoln Sriram</div>
+                  </a> </div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+          <div class="col-md-8 col-sm-12 pull-left posttimeline">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <div class="status-upload nopaddingbtm">
+                  <form>
+                    <textarea class="form-control" placeholder="What are you doing right now?"></textarea>
+                    <br>
+                    <ul class="nav nav-pills pull-left ">
+                      <li><a title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Audio"><i class="glyphicon glyphicon-bullhorn"></i></a></li>
+                      <li><a title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Video"><i class=" glyphicon glyphicon-facetime-video"></i></a></li>
+                      <li><a title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Picture"><i class="glyphicon glyphicon-picture"></i></a></li>
+                    </ul>
+                    <button type="submit" class="btn btn-success pull-right"> Share</button>
+                  </form>
+                </div>
+                <!-- Status Upload  --> 
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="btn-group pull-right postbtn">
+                <button type="button" class="dotbtn dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> <span class="dots"></span> </button>
+                <ul class="dropdown-menu pull-right" role="menu">
+                  <li><a href="javascript:void(0)">Hide this</a></li>
+                  <li><a href="javascript:void(0)">Report</a></li>
+                </ul>
+              </div>
+              <div class="col-md-12">
+                <div class="media">
+                  <div class="media-left"> <a href="javascript:void(0)"> <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="" class="media-object"> </a> </div>
+                  <div class="media-body">
+                    <h4 class="media-heading">Lucky Sans<br>
+                      <small><i class="fa fa-clock-o"></i> Yesterday, 2:00 am</small> </h4>
+                    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio. </p>
+    
+                    <ul class="nav nav-pills pull-left ">
+                      <li><a href="" title=""><i class="glyphicon glyphicon-thumbs-up"></i> 2015</a></li>
+                      <li><a href="" title=""><i class=" glyphicon glyphicon-comment"></i> 25</a></li>
+                      <li><a href="" title=""><i class="glyphicon glyphicon-share-alt"></i> 15</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 commentsblock border-top">
+                <div class="media">
+                  <div class="media-left"> <a href="javascript:void(0)"> <img alt="64x64" src="https://bootdey.com/img/Content/avatar/avatar1.png" class="media-object"> </a> </div>
+                  <div class="media-body">
+                    <h4 class="media-heading">Astha Smith</h4>
+                    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                  </div>
+                </div>
+                <div class="media">
+                  <div class="media-left"> <a href="javascript:void(0)"> <img alt="64x64" src="https://bootdey.com/img/Content/avatar/avatar1.png" class="media-object"> </a> </div>
+                  <div class="media-body">
+                    <h4 class="media-heading">Lucky Sans</h4>
+                    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. </p>
+                    <div class="media">
+                      <div class="media-left"> <a href="javascript:void(0)"> <img alt="64x64" src="https://bootdey.com/img/Content/avatar/avatar1.png" class="media-object"> </a> </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">Astha Smith</h4>
+                        <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="btn-group pull-right postbtn">
+                <button type="button" class="dotbtn dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> <span class="dots"></span> </button>
+                <ul class="dropdown-menu pull-right" role="menu">
+                  <li><a href="javascript:void(0)">Hide this</a></li>
+                  <li><a href="javascript:void(0)">Report</a></li>
+                </ul>
+              </div>
+              <div class="col-md-12">
+                <div class="media">
+                  <div class="media-left"> <a href="javascript:void(0)"> <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" class="media-object"> </a> </div>
+                  <div class="media-body">
+                    <h4 class="media-heading"> Lucky Sans<br>
+                      <small><i class="fa fa-clock-o"></i> Yesterday, 2:00 am</small> </h4>
+                    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio. </p>
+                    <ul class="nav nav-pills pull-left ">
+                      <li><a href="" title=""><i class="glyphicon glyphicon-thumbs-up"></i> 2015</a></li>
+                      <li><a href="" title=""><i class=" glyphicon glyphicon-comment"></i> 25</a></li>
+                      <li><a href="" title=""><i class="glyphicon glyphicon-share-alt"></i> 15</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 border-top">
+                <div class="status-upload">
+                  <form>
+                    <label>Comment</label>
+                    <textarea class="form-control" placeholder="Comment here"></textarea>
+                    <br>
+                    <ul class="nav nav-pills pull-left ">
+                      <li><a title=""><i class="glyphicon glyphicon-bullhorn"></i></a></li>
+                      <li><a title=""><i class=" glyphicon glyphicon-facetime-video"></i></a></li>
+                      <li><a title=""><i class="glyphicon glyphicon-picture"></i></a></li>
+                    </ul>
+                    <button type="submit" class="btn btn-success pull-right"> Comment</button>
+                  </form>
+                </div>
+                <!-- Status Upload  --> 
+                
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="btn-group pull-right postbtn">
+                <button type="button" class="dotbtn dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> <span class="dots"></span> </button>
+                <ul class="dropdown-menu pull-right" role="menu">
+                  <li><a href="javascript:void(0)">Hide this</a></li>
+                  <li><a href="javascript:void(0)">Report</a></li>
+                </ul>
+              </div>
+              <div class="col-md-12">
+                <div class="media">
+                  <div class="media-left"> <a href="javascript:void(0)"> <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" class="media-object"> </a> </div>
+                  <div class="media-body">
+                    <h4 class="media-heading"> Lucky Sans<br>
+                      <small><i class="fa fa-clock-o"></i> Yesterday, 2:00 am</small> </h4>
+                    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio. </p>
+                    <ul class="nav nav-pills pull-left ">
+                      <li><a href="" title=""><i class="glyphicon glyphicon-thumbs-up"></i> 2015</a></li>
+                      <li><a href="" title=""><i class=" glyphicon glyphicon-comment"></i> 25</a></li>
+                      <li><a href="" title=""><i class="glyphicon glyphicon-share-alt"></i> 15</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 commentsblock border-top">
+                <div class="media">
+                  <div class="media-left"> <a href="javascript:void(0)"> <img alt="64x64" src="https://bootdey.com/img/Content/avatar/avatar1.png" class="media-object"> </a> </div>
+                  <div class="media-body">
+                    <h4 class="media-heading">Astha Smith</h4>
+                    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. </p>
+                    <div class="media">
+                      <div class="media-left"> <a href="javascript:void(0)"> <img alt="64x64" src="https://bootdey.com/img/Content/avatar/avatar1.png" class="media-object"> </a> </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">Nested Lucky Sans</h4>
+                        <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="btn-group pull-right postbtn">
+                <button type="button" class="dotbtn dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> <span class="dots"></span> </button>
+                <ul class="dropdown-menu pull-right" role="menu">
+                  <li><a href="javascript:void(0)">Hide this</a></li>
+                  <li><a href="javascript:void(0)">Report</a></li>
+                </ul>
+              </div>
+              <div class="col-md-12">
+                <div class="media">
+                  <div class="media-left"> <a href="javascript:void(0)"> <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" class="media-object"> </a> </div>
+                  <div class="media-body">
+                    <h4 class="media-heading"> Lucky Sans<br>
+                      <small><i class="fa fa-clock-o"></i> Yesterday, 2:00 am</small> </h4>
+                    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio. </p>
+                    <ul class="nav nav-pills pull-left ">
+                      <li><a href="" title=""><i class="glyphicon glyphicon-thumbs-up"></i> 2015</a></li>
+                      <li><a href="" title=""><i class=" glyphicon glyphicon-comment"></i> 25</a></li>
+                      <li><a href="" title=""><i class="glyphicon glyphicon-share-alt"></i> 15</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="btn-group pull-right postbtn">
+                <button type="button" class="dotbtn dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> <span class="dots"></span> </button>
+                <ul class="dropdown-menu pull-right" role="menu">
+                  <li><a href="javascript:void(0)">Hide this</a></li>
+                  <li><a href="javascript:void(0)">Report</a></li>
+                </ul>
+              </div>
+              <div class="col-md-12">
+                <div class="media">
+                  <div class="media-left"> <a href="javascript:void(0)"> <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" class="media-object"> </a> </div>
+                  <div class="media-body">
+                    <h4 class="media-heading"> Lucky Sans<br>
+                      <small><i class="fa fa-clock-o"></i> Yesterday, 2:00 am</small> </h4>
+                    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio. </p>
+                    <ul class="nav nav-pills pull-left ">
+                      <li><a href="" title=""><i class="glyphicon glyphicon-thumbs-up"></i> 2015</a></li>
+                      <li><a href="" title=""><i class=" glyphicon glyphicon-comment"></i> 25</a></li>
+                      <li><a href="" title=""><i class="glyphicon glyphicon-share-alt"></i> 15</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    </div>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>-->
+    <script src="../../models/index.js"></script>  
+    </body>
+    </html>
