@@ -2,7 +2,7 @@ module.exports =
 {
   "development": {
     "username": "root",
-    "password": 'process.env.MYSQL_PWD',
+    "password": process.env.MYSQL_PWD,
     "database": "superhero_db",
     "host": "localhost",
     "dialect": "mysql"
