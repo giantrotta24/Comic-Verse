@@ -4,6 +4,8 @@ const exphbs = require('express-handlebars');
 const passport = require('passport');
 const session = require('express-session');
 
+
+
 //models
 const db = require('./models');
 
@@ -18,13 +20,14 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(express.static('public'));
 
+
 //passport
-app.use(session({ secret: 'smiley face', resave: true, saveUninitialized: true }));
+app.use(session({ secret: 'keyboard cat',resave: true, saveUninitialized:true})); // session secret
 app.use(passport.initialize());
-app.use(passport.session());
+app.use(passport.session()); // persistent login sessions
 
 //passport strategies
-// require('./app/config/passport/passport')(passport, models.user);
+require('./config/passport/passport.js')(passport, db.user);
 
 // Handlebars
 app.engine(
@@ -36,9 +39,10 @@ app.engine(
 app.set('view engine', 'handlebars');
 
 // Routes
+let authRoute = require('./routes/auth')(app, passport);
 require('./routes/apiRoutes')(app);
 require('./routes/htmlRoutes')(app);
-// require('./routes/auth')(app, passport);
+
 
 const syncOptions = { force: false };
 
