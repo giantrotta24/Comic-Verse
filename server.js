@@ -24,7 +24,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 //passport strategies
-require('./app/config/passport/passport')(passport, models.user);
+// require('./app/config/passport/passport')(passport, models.user);
 
 // Handlebars
 app.engine(
@@ -38,7 +38,7 @@ app.set('view engine', 'handlebars');
 // Routes
 require('./routes/apiRoutes')(app);
 require('./routes/htmlRoutes')(app);
-require('./routes/auth')(app, passport);
+// require('./routes/auth')(app, passport);
 
 const syncOptions = { force: false };
 
