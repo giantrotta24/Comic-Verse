@@ -14,10 +14,17 @@ module.exports = function(app) {
     });
   });
 
-  app.get("/api/heroes/:id" , function(req, res) {
-    db.Heroes.findOne({ where: { id: req.params.id } }).then((results) => {
-      res.json(results);
-    });
+  app.get("/api/:name" , async(req, res) => {
+    const hero = await db.Heroes.findOne({ where: { name: req.params.name } });
+    const villain = await db.Villains.findOne({ where: { name: req.params.name } });
+    if (villain === null) {
+      results = hero;
+    }
+    else {
+      results = villain;
+    };
+    console.log(results);
+    return res.json(results);
   });
   
   app.get("/api/villains/:id" , function(req, res) {
