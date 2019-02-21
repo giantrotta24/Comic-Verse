@@ -1,0 +1,108 @@
+
+/* ALOT OF SELECTOR/PROPS SO MAKE A NEW FILE ******************** */
+
+
+.list-group-item {
+  line-height: 2.5;
+}
+body{
+  font-family: 'Bangers';font-size: 22px;
+  
+}
+img:hover{
+  opacity: 0.5;
+}
+a{
+  color:  #00e500;
+
+}
+a:hover{
+  color: rgb(215, 18, 87);
+}
+
+.superSizer{
+  background-image: url("../../heroPics/indexbackgroundAgain.jpg");
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+  opacity: 0.5;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  top: 0;
+}
+.LoginSuperSizer{
+  /* background-image: url("../../heroPics/backgroundComicsMarvel.jpeg"); */
+  background-image: url("../../heroPics/loginComicBackground.jpg");
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+  opacity: 0.5;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  top: 0;
+}
+.SignupSuperSizer{
+  /* background-image: url("../../heroPics/backgroundComicsMarvel.jpeg"); */
+  background-image: url("../../heroPics/signupBackground.jpg");
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+  opacity: 0.5;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  top: 0;
+}
+.topPageJumbo{
+  background-color: rgb(201, 213, 216);
+}
+.mylist{
+  display:none;
+  width: 200px;
+  height: 300px;
+}
+#login{
+  color: rgb(0, 0, 0);
+}
+
+#home{
+  color: rgb(159, 237, 232);
+  font-size: 30px;
+}
+
+#divBar{
+  color: #0df20d;
+}
+
+#navs{
+  color: #18f418;
+  font-size: 30px;
+}
+
+#dropMenu{
+  color: #00e500;
+  background-color: black;
+}
+
+#navbarDropdown{
+  color: #12e812;
+  font-size: 30px;
+}
+
+#drops{
+  color: #00e500;
+  background-color: rgb(36, 34, 34);
+}
+
+#smallNavs{
+  color: #00e500;
+  font-size: 19px;
+}

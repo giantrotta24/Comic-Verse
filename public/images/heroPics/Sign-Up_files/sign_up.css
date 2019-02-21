@@ -1,0 +1,16 @@
+.mainCard{
+    width:412px;
+    margin:10vh auto;
+    background-color:#ffffff4d;
+    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.12), 0 12px 40px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+/* .btn-facebook {          use this for later on**************
+    background-color: #405D9D;
+    color: #fff;
+}
+.btn-twitter {
+    background-color: #42AEEC;
+    color: #fff;
+} */

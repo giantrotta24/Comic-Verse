@@ -1,5 +1,10 @@
 module.exports = (sequelize, DataTypes) => {
-    const Users = sequelize.define("Users", {
+    const User = sequelize.define("user", {
+        id: {
+            autoIncrement: true,
+            primaryKey: true,
+            type: DataTypes.INTEGER
+        },
         name: {
             type: DataTypes.STRING,
             validate: {
@@ -13,7 +18,7 @@ module.exports = (sequelize, DataTypes) => {
                 }
             },    
         },
-        userName: {
+        username: {
             type: DataTypes.STRING,
             validate: {
                 notEmpty: {
@@ -39,6 +44,23 @@ module.exports = (sequelize, DataTypes) => {
                 }
             },
         },
+        email: {
+            type: DataTypes.STRING,
+            validate: {
+                isEmail: true
+            }
+        },
+        password: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
+        last_login: {
+            type: DataTypes.DATE
+        }, 
+        status: {
+            type: DataTypes.ENUM('active', 'inactive'),
+            defaultValue: 'active'
+        },
         admin: {
             type: DataTypes.BOOLEAN,
             defaultValue: false
@@ -48,5 +70,5 @@ module.exports = (sequelize, DataTypes) => {
             defaultValue: false
         }
     });
-    return Users;
+    return User;
 };
