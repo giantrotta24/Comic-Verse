@@ -1,3 +1,4 @@
+/* eslint-disable */
 // when user hits the search-btn
 $("#search-btn").on("click", function() {
   let searchedCharacter = $("#character-search")
