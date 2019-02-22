@@ -1,3 +1,5 @@
+/* eslint-disable require-jsdoc */
+/* eslint-disable func-style */
 const authController = require('../controllers/authcontroller');
 
 module.exports = (app, passport) => {
@@ -19,9 +21,12 @@ module.exports = (app, passport) => {
         failureRedirect: '/login'
     }));
 
+    // eslint-disable-next-line consistent-return
     function isLoggedIn(req, res, next) {
-        if (req.isAuthenticated()) return next();
+        if (req.isAuthenticated()) {
+            return next();
+        }
         res.redirect('/login');
     }
 
-}
+};

@@ -1,3 +1,5 @@
+/* eslint-disable camelcase */
+/* eslint-disable max-lines-per-function */
 const db = require("../models");
 
 module.exports = (app) => {

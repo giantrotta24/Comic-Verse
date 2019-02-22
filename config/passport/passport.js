@@ -1,7 +1,13 @@
+/* eslint-disable consistent-return */
+/* eslint-disable no-sync */
+/* eslint-disable max-params */
+/* eslint-disable no-shadow */
+/* eslint-disable max-lines-per-function */
 const bCrypt = require('bcrypt-nodejs');
 
 module.exports = (passport, user) => {
     let User = user;
+    // eslint-disable-next-line global-require
     let LocalStrategy = require('passport-local').Strategy;
 
     passport.serializeUser((user, done) => {
@@ -31,33 +37,33 @@ module.exports = (passport, user) => {
 
             User.findOne({
                 where: {
-                    email: email
+                    email
                 }
             }).then((user) => {
                 if (user) {
                     return done(null, false, {
                         message: 'That email is already taken'
                     });
-                } else {
-                    let userPassword = generateHash(password);
-
-                    let data = {
-                        email: email,
-                        password: userPassword,
-                        name: req.body.name,
-                        username: req.body.username
-                    };
-
-                    User.create(data).then((newUser, created) => {
-                        if (!newUser) {
-                            return done(null, false);
-                        }
-
-                        if (newUser) {
-                            return done(null, newUser);
-                        }
-                    });
                 }
+                let userPassword = generateHash(password);
+
+                let data = {
+                    email,
+                    password: userPassword,
+                    name: req.body.name,
+                    username: req.body.username
+                };
+
+                // eslint-disable-next-line no-unused-vars
+                User.create(data).then((newUser, created) => {
+                    if (!newUser) {
+                        return done(null, false);
+                    }
+
+                    if (newUser) {
+                        return done(null, newUser);
+                    }
+                });
             });
         }
     ));
@@ -78,9 +84,9 @@ module.exports = (passport, user) => {
 
             let isValidPassword = function (userpass, password) {
                 return bCrypt.compareSync(password, userpass);
-            }
+            };
 
-            User.findOne({ where: { email: email } }).then(function (user) {
+            User.findOne({ where: { email } }).then(function (user) {
 
                 if (!user) {
                     return done(null, false, { message: 'Email does not exist' });
@@ -96,15 +102,16 @@ module.exports = (passport, user) => {
 
                 return done(null, userinfo);
 
-            }).catch(function (err) {
+            }).
+                catch((err) => {
 
-                console.log("Error:", err);
+                    // eslint-disable-next-line no-console
+                    console.log("Error:", err);
 
-                return done(null, false, { message: 'Something went wrong with your Signin' });
+                    return done(null, false, { message: 'Something went wrong with your Signin' });
 
-
-            });
+                });
 
         }
     ));
-}
+};

@@ -1,3 +1,4 @@
+/* eslint-disable max-lines-per-function */
 module.exports = (sequelize, DataTypes) => {
     const User = sequelize.define("user", {
         id: {
@@ -13,10 +14,13 @@ module.exports = (sequelize, DataTypes) => {
                     msg: "Required"
                 },
                 len: {
-                   args: [1,140],
-                   msg: "String length is not in this range"
+                    args: [
+                        1,
+                        140
+                    ],
+                    msg: "String length is not in this range"
                 }
-            },    
+            }
         },
         username: {
             type: DataTypes.STRING,
@@ -26,10 +30,13 @@ module.exports = (sequelize, DataTypes) => {
                     msg: "Required"
                 },
                 len: {
-                    args: [6,40],
+                    args: [
+                        6,
+                        40
+                    ],
                     msg: "Username must be at least 6 characters in length"
                 }
-            },
+            }
         },
         location: {
             type: DataTypes.STRING,
@@ -39,10 +46,13 @@ module.exports = (sequelize, DataTypes) => {
                     msg: "Required"
                 },
                 len: {
-                    args: [2,50],
+                    args: [
+                        2,
+                        50
+                    ],
                     msg: "Location must be at least 2 characters in length"
                 }
-            },
+            }
         },
         email: {
             type: DataTypes.STRING,
@@ -54,10 +64,12 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.STRING,
             allowNull: false
         },
+        // eslint-disable-next-line camelcase
         last_login: {
             type: DataTypes.DATE
-        }, 
+        },
         status: {
+            // eslint-disable-next-line new-cap
             type: DataTypes.ENUM('active', 'inactive'),
             defaultValue: 'active'
         },
@@ -70,5 +82,6 @@ module.exports = (sequelize, DataTypes) => {
             defaultValue: false
         }
     });
+
     return User;
 };
