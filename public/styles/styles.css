@@ -1,5 +1,8 @@
 
 /* ALOT OF SELECTOR/PROPS SO MAKE A NEW FILE ******************** */
+body {
+  padding-top: 80px;
+}
 
 #home:hover, #navs:hover, #navbarDropdown:hover, #drops:hover, #smallNavs:hover{
   background-color: rgb(45, 40, 40);
