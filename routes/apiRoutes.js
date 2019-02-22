@@ -1,13 +1,13 @@
 const db = require("../models");
 
-module.exports = function(app) {
-  app.get("/api/heroes", function(req, res) {
+module.exports = (app) => {
+  app.get("/api/heroes", (req, res) => {
     db.Heroes.findAll({}).then((results) => {
       res.json(results);
     });
   });
 
-  app.get("/api/villains", function(req, res) {
+  app.get("/api/villains", (req, res) => {
     db.Villains.findAll({}).then((results) => {
       res.json(results);
     });
@@ -26,7 +26,7 @@ module.exports = function(app) {
     return res.json(results);
   });
 
-  app.post("/api/heroes", function(req, res) {
+  app.post("/api/heroes", (req, res) => {
     db.Heroes.create({
       name: req.body.name,
       secretIdentity: req.body.secretIdentity,
@@ -38,7 +38,7 @@ module.exports = function(app) {
     });
   });
 
-  app.post("/api/villains", function(req, res) {
+  app.post("/api/villains", (req, res) => {
     db.Villains.create({
       name: req.body.name,
       secretIdentity: req.body.secretIdentity,
@@ -51,9 +51,9 @@ module.exports = function(app) {
   });
 
   // Delete an example by id
-  app.delete("/api/examples/:id", function(req, res) {
-    db.Example.destroy({ where: { id: req.params.id } }).then(function(dbExample) {
-      res.json(dbExample);
-    });
-  });
+  // app.delete("/api/examples/:id", function(req, res) {
+  //   db.Example.destroy({ where: { id: req.params.id } }).then(function(dbExample) {
+  //     res.json(dbExample);
+  //   });
+  // });
 };
