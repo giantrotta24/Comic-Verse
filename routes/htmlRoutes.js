@@ -1,27 +1,50 @@
 const db = require("../models");
-const path = require("path");
 
-module.exports = function(app) {
+module.exports = (app) => {
   // Load index page
-  app.get("/", function(req, res) {
-    db.Example.findAll({}).then((dbExamples) => {
+  app.get("/", (req, res) => {
+    db.Heroes.findAll({}).then((superhero_db) => {
       res.render("index", {
-        msg: "Welcome!",
-        examples: dbExamples
+        msg: "Weeny!",
+        heroes: superhero_db
       });
     });
   });
 
-  app.get("/add", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/add.html"));
+  app.get("/hero", (req, res) => {
+    db.Heroes.findAll({}).then((superhero_db) => {
+      res.render("hero", {
+        heroes: superhero_db
+      });
+    });
   });
 
-  app.get("/view", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/view.html"));
+  app.get("/villain", (req, res) => {
+    db.Heroes.findAll({}).then((superhero_db) => {
+      res.render("villain", {
+        villains: superhero_db
+      });
+    });
+  });
+
+  app.get("/view/hero/:name", (req, res) => {
+    db.Heroes.findOne({ where: { name: req.params.name } }).then((superhero_db) => {
+      res.render("view", {
+        character: superhero_db
+      });
+    });
+  });
+
+  app.get("/view/villain/:name", (req, res) => {
+    db.Villains.findOne({ where: { name: req.params.name } }).then((superhero_db) => {
+      res.render("view", {
+        character: superhero_db
+      });
+    });
   });
 
   // Load example page and pass in an example by id
-  app.get("/example/:id", function(req, res) {
+  app.get("/example/:id", (req, res) => {
     db.Example.findOne({ where: { id: req.params.id } }).then((dbExample) => {
       res.render("example", {
         example: dbExample
@@ -30,7 +53,7 @@ module.exports = function(app) {
   });
 
   // Render 404 page for any unmatched routes
-  app.get("*", function(req, res) {
+  app.get("*", (req, res) => {
     res.render("404");
   });
 };
