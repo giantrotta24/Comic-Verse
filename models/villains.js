@@ -4,7 +4,9 @@ module.exports = function(sequelize, DataTypes) {
         secretIdentity: DataTypes.STRING,
         earlyLife: DataTypes.TEXT,
         currentHistory: DataTypes.TEXT,
-        personalLife: DataTypes.TEXT,
+        publisher: DataTypes.STRING,
+        firstAppearance: DataTypes.STRING,
+        image: DataTypes.STRING,
         approved: {
             type: DataTypes.BOOLEAN,
             defaultValue: false

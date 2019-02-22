@@ -73,6 +73,9 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.ENUM('active', 'inactive'),
             defaultValue: 'active'
         },
+        image: {
+            type: DataTypes.STRING
+        },
         admin: {
             type: DataTypes.BOOLEAN,
             defaultValue: false
