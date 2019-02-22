@@ -12,9 +12,9 @@ body{
   font-family: 'Bangers';font-size: 22px;
   
 }
-img:hover{
-  opacity: 0.5;
-}
+/* img:hover{
+  opacity: 0;
+} */
 a{
   color:  #00e500;
 
