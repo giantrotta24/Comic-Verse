@@ -4,7 +4,7 @@ const exphbs = require('express-handlebars');
 const passport = require('passport');
 const session = require('express-session');
 
-
+console.log("TESTING");
 
 //models
 const db = require('./models');
