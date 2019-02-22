@@ -3,7 +3,7 @@
 // URL parameter. Our server then performs the search to grab that character from the Database.
 
 // when user hits the search-btn
-$("#search-btn").on("click", function() {
+$("#search-btn").on("click", function () {
   // save the character they typed into the character-search input
   var searchedCharacter = $("#character-search")
     .val()
@@ -15,7 +15,7 @@ $("#search-btn").on("click", function() {
 
   // run an AJAX GET-request for our servers api,
   // including the user's character in the url
-  $.get("/api/heroes/" + searchedCharacter, function(data) {
+  $.get("/api/heroes/" + searchedCharacter, function (data) {
     // log the data to our console
     console.log(data);
     // empty to well-section before adding new content
