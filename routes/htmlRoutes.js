@@ -6,7 +6,7 @@ module.exports = (app) => {
   // Load index page
   app.get("/", (req, res) => {
     db.Heroes.findAll({}).then(
-      () => console.log(res));
+      () => res.send('queried!'));
     // .then((superhero_db) => {
     //   res.render("index", {
     //     msg: "Weeny!",
