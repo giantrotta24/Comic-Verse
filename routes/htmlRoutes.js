@@ -1,6 +1,7 @@
 /* eslint-disable camelcase */
 /* eslint-disable max-lines-per-function */
 const db = require("../models");
+const path = require("path");
 
 module.exports = (app) => {
   // Load index page
@@ -52,6 +53,10 @@ module.exports = (app) => {
 
   app.get("/add", (req, res) => {
     res.render("add");
+  });
+
+  app.get("/add2", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/add.html"));
   });
 
   // Render 404 page for any unmatched routes

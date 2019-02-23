@@ -28,9 +28,9 @@ module.exports = (app) => {
     return res.json(results);
   });
 
-  app.get("/api" , async(req, res) => {
-    const hero = await db.Heroes.findOne({ where: { name: req.body.name } });
-    const villain = await db.Villains.findOne({ where: { name: req.body.name } });
+    app.get("/api" , async(req, res) => {
+    const hero = await db.Heroes.findOne({ where: { name: req.query.name } });
+    const villain = await db.Villains.findOne({ where: { name: req.query.name } });
     if (villain === null && hero === null) {
       res.redirect("/add");
     }
@@ -44,8 +44,8 @@ module.exports = (app) => {
       fill = "villain";
       res.redirect("/view/" + fill + "/" + results.name);
     };
-    // console.log(results);
-    // res.redirect("/view/" + fill + "/" + results.name);
+    console.log(results);
+    // return res.json(results)
   });
 
   app.post("/api/heroes", (req, res) => {
@@ -72,4 +72,10 @@ module.exports = (app) => {
     });
   });
 
+  // Delete an example by id
+  // app.delete("/api/examples/:id", function(req, res) {
+  //   db.Example.destroy({ where: { id: req.params.id } }).then(function(dbExample) {
+  //     res.json(dbExample);
+  //   });
+  // });
 };
