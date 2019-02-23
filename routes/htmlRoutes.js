@@ -9,6 +9,7 @@ module.exports = (app) => {
       res.render("index", {
         heroes: superhero_db
       });
+    });
   });
 
 
