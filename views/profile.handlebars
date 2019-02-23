@@ -28,7 +28,7 @@
                         <a class="dropdown-item" id="drops" href="/profile">Profile</a>
                         <a class="dropdown-item" id="drops" href="/editprofile">Edit Profile</a>
                         <div class="dropdown-divider"></div>
-                        {{!-- <a class="dropdown-item" id="drops" href="#">Contact-Us</a> --}}
+                        <a class="dropdown-item" id="drops" href="#">Contact-Us</a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -45,66 +45,17 @@
                     <a class="nav-link" id="smallNavs" href="/signup">SIGN-UP</a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0" action="/api" method="GET">
-                <input class="form-control mr-sm-2" type="search" id="name" name="name" placeholder="Search" aria-label="Search">
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
         </div>
     </nav>
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
-                <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#divBar"
-                    aria-controls="divBar" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-    
-                <div class="collapse navbar-collapse" id="divBar">
-                    <ul class="navbar-nav mr-auto" id="ulForBar">
-                        <li class="nav-item active">
-                            <a class="nav-link" id="home" href="../../public/HTML/index.html">Home&nbsp <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="navs" href="../../public/HTML/Hero_Page.html">&nbspHeroes&nbsp</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="navs" href="../../public/HTML/Villain_Page.html">&nbspVillains&nbsp</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                               <!--- <div id="dropdownNav">-->&nbspDropdown&nbsp<!---</div>-->
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropMenu">
-                                <a class="dropdown-item" id="drops" href="../../public/HTML/profile_page.html">Profile</a>
-                                <a class="dropdown-item" id="drops" href="../../public/HTML/editProfile.html">Edit Profile</a>
-                                <!-- <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" id="drops" href="#">Contact-Us</a> -->
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="navs" href="#">&nbspCLASH</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="navs" href="#">&nbspAdd Hero/Villain</a>
-          </li>
 
-          <li class="nav-item">
-            <a class="nav-link" id="smallNavs" href="../../public/HTML/login_Page.html">&nbsp&nbsp
-              <!---&nbsp&nbsp&nbsp-->LOGIN&nbsp</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="smallNavs" href="../../public/HTML/sign_up.html">&nbspSIGN-UP&nbsp</a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-      </div>
-    </nav>
     <br />
+
     <div class="container">
+      <div id="profileBGTrans">
       <div class="span3 well">
           <center>
           <a href="#aboutModal" data-toggle="modal" data-target="#myModal"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbezqZpEuwGSvitKy3wrwnth5kysKdRqBW54cAszm_wiutku3R" name="aboutme" width="140" height="140" class="img-circle"></a>
@@ -124,16 +75,18 @@
                       <center>
                       <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbezqZpEuwGSvitKy3wrwnth5kysKdRqBW54cAszm_wiutku3R" name="aboutme" width="140" height="140" border="0" class="img-circle"></a>
                       <h3 class="media-heading">Joe Sixpack <small>USA</small></h3>
-                      <span><strong>Skills: </strong></span>
-                          <span class="label label-warning">HTML5/CSS</span>
-                          <span class="label label-info">Adobe CS 5.5</span>
-                          <span class="label label-info">Microsoft Office</span>
-                          <span class="label label-success">Windows XP, Vista, 7</span>
+
+                      {{!-- need some logic for add their comic book characters --}}
+                      <span><strong>Favorite Characters:</strong></span>
+                          <span class="label label-warning">Batman</span>
+                          <span class="label label-info">Joker</span>
+                          <span class="label label-info">Spider-man</span>
+                          <span class="label label-success">DareDevil</span>
                       </center>
                       <hr>
                       <center>
                       <p class="text-left"><strong>Bio: </strong><br>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sem dui, tempor sit amet commodo a, vulputate vel tellus.</p>
+                          I love super heroes ANY! I work at Dairy Queen and love icecream.</p>
                       <br>
                       </center>
                   </div>
@@ -144,5 +97,6 @@
                   </div>
               </div>
           </div>
+      </div>
       </div>
   </div>
