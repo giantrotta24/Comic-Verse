@@ -82,7 +82,9 @@
         <div class="container">
             <div class="row">
                 {{#each heroes}}
-                <a href="/view/hero/{{this.name}}">{{this.name}}</a>
+                    {{#if approved}}
+                        <a href="/view/hero/{{this.name}}">{{this.name}}</a>
+                    {{/if}}
                 {{/each}}
             </div>
         </div>
