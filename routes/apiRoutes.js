@@ -28,7 +28,32 @@ module.exports = (app) => {
     return res.json(results);
   });
 
-    app.get("/api" , async(req, res) => {
+  app.post("/api/approve/:name", async(req, res) => {
+    const hero = await db.Heroes.findOne({ where: { name: req.params.name } });
+    const villain = await db.Villains.findOne({ where: { name: req.params.name } });
+    if (villain === null) {
+      db.Heroes.update({
+        approved: true
+      }, {
+        where: {
+          name: req.params.name
+        }
+      });
+      res.redirect("/view/hero/" + req.params.name);
+    }
+    else {
+      db.Villains.update({
+        approved: true
+      }, {
+        where: {
+          name: req.params.name
+        }
+      });
+      res.redirect("/view/villain/" + req.params.name);
+    }
+  });
+
+  app.get("/api" , async(req, res) => {
     const hero = await db.Heroes.findOne({ where: { name: req.query.name } });
     const villain = await db.Villains.findOne({ where: { name: req.query.name } });
     if (villain === null && hero === null) {

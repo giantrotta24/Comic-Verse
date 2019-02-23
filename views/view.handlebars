@@ -69,6 +69,10 @@
             <h3>Personal Life</h3>
             <p>{{character.personalLife}}</p>
             {{/if}}
+
+            <form action="/api/approve/{{character.name}}?_method=PUT" method="POST">
+                <button type="submit" class="btn btn-danger"> {{character.name}}</button>
+            </form>
         </div>
             <script>//
                 // accordionExpand.js
