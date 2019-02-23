@@ -5,7 +5,7 @@ const db = require("../models");
 module.exports = (app) => {
   // Load index page
   app.get("/", (req, res) => {
-    db.Heroes.findAll({}).then(() => res.send('queried!'));
+    db.Heroes.findAll({});
     // .then((superhero_db) => {
     //   res.render("index", {
     //     msg: "Weeny!",
