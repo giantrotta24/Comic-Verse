@@ -31,16 +31,21 @@ module.exports = (app) => {
   app.get("/api" , async(req, res) => {
     const hero = await db.Heroes.findOne({ where: { name: req.body.name } });
     const villain = await db.Villains.findOne({ where: { name: req.body.name } });
-    if (villain === null) {
+    if (villain === null && hero === null) {
+      res.redirect("/add");
+    }
+    else if (villain === null) {
       results = hero;
       fill = "hero";
+      res.redirect("/view/" + fill + "/" + results.name);
     }
     else {
       results = villain;
       fill = "villain";
+      res.redirect("/view/" + fill + "/" + results.name);
     };
-    console.log(results);
-    res.redirect("/view/" + fill + "/" + req.body.name);
+    // console.log(results);
+    // res.redirect("/view/" + fill + "/" + results.name);
   });
 
   app.post("/api/heroes", (req, res) => {
