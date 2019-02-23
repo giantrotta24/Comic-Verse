@@ -37,13 +37,15 @@ module.exports = (app) => {
     else if (villain === null) {
       results = hero;
       fill = "hero";
+      res.redirect("/view/" + fill + "/" + results.name);
     }
     else {
       results = villain;
       fill = "villain";
+      res.redirect("/view/" + fill + "/" + results.name);
     };
-    console.log(results);
-    res.redirect("/view/" + fill + "/" + results.name);
+    // console.log(results);
+    // res.redirect("/view/" + fill + "/" + results.name);
   });
 
   app.post("/api/heroes", (req, res) => {
