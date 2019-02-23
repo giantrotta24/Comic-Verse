@@ -54,6 +54,14 @@ module.exports = (app) => {
     });
   });
 
+  //trying to see if click on clash can go to the clash page
+  app.get("/clash", (req, res) => {
+    res.render("clash");
+  });
+  app.get("/add", (req, res) => {
+    res.render("add");
+  });
+
   // Render 404 page for any unmatched routes
   app.get("*", (req, res) => {
     res.render("404");

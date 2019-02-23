@@ -83,13 +83,25 @@
             <!-- INTRO OF THE HOME-PAGE -->
             <h3>Welcome the COMIC-VERSE!</h3>
             <h3>Find any Character with ease!</h3>
+            
+            {{!-- this is the small icon in jumbotron in home page right under welcome text --}}
+            <p>
+            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-01.png" id = "heroAndVillainIcons">
+            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-05.png" id = "heroAndVillainIcons">
+            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-02.png" id = "heroAndVillainIcons">
+            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-03.png" id = "heroAndVillainIcons">
+            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-04.png" id = "heroAndVillainIcons">
+            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-06.png" id = "heroAndVillainIcons">
+            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-07.png" id = "heroAndVillainIcons">
+            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-08.png" id = "heroAndVillainIcons">
+            </p>
+            {{!-- <br />
             <br />
             <br />
             <br />
             <br />
             <br />
-            <br />
-            <br />
+            <br /> --}}
         </div>
         <!-- END OF JUMBOTRON -->
         <br />
@@ -136,9 +148,9 @@
         <br/>
 
         <!-- HERO AND VILLAIN OF THE DAY SECTION -->
-        <div class="container heroAndVillainDiv">
+        <div class="container">
         <div class="row">
-            <div class="col">
+            <div class="col" id="heroAndVillainDiv">
 
                 <br />
                 <br/>
@@ -146,7 +158,7 @@
                 <br />
             </div>
         </div>
-        <div class="heroAndVillainDiv">
+        <div id="heroAndVillainDiv">
         <div class="card" style="width: 18rem; float: left;">
             <img class="card-img-top" src="/images/heroPics/ironMan.jpeg" alt="Card image cap">
             <div class="card-body">
