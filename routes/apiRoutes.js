@@ -31,10 +31,7 @@ module.exports = (app) => {
   app.get("/api" , async(req, res) => {
     const hero = await db.Heroes.findOne({ where: { name: req.body.name } });
     const villain = await db.Villains.findOne({ where: { name: req.body.name } });
-    if (villain === null && hero === null) {
-      res.render("404");
-    }
-    else if (villain === null) {
+    if (villain === null) {
       results = hero;
       fill = "hero";
     }
