@@ -21,7 +21,7 @@ module.exports = (app) => {
   });
 
   app.get("/villain", (req, res) => {
-    db.Heroes.findAll({}).then((superhero_db) => {
+    db.Villains.findAll({}).then((superhero_db) => {
       res.render("villain", {
         villains: superhero_db
       });

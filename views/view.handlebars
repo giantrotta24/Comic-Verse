@@ -53,14 +53,22 @@
     </nav>
         <div class="container">
             <h2>{{character.name}}</h2>
+            {{#if character.secretIdentity}}
             <h3>Secret Identity</h3>
             <p>{{character.secretIdentity}}</p>
+            {{/if}}
+            {{#if character.earlyLife}}
             <h3>Early Life</h3>
             <p>{{character.earlyLife}}</p>
+            {{/if}}
+            {{#if character.currentHistory}}
             <h3>Current History</h3>
             <p>{{character.currentHistory}}</p>
+            {{/if}}
+            {{#if character.personalLife}}
             <h3>Personal Life</h3>
             <p>{{character.personalLife}}</p>
+            {{/if}}
         </div>
             <script>//
                 // accordionExpand.js
