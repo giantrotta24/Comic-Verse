@@ -5,13 +5,16 @@ const db = require("../models");
 module.exports = (app) => {
   // Load index page
   app.get("/", (req, res) => {
-    db.Heroes.findAll({}).then((superhero_db) => {
-      res.render("index", {
-        msg: "Weeny!",
-        heroes: superhero_db
-      });
-    });
+    res.send('Hello');
+
   });
+  //   db.Heroes.findAll({}).then((superhero_db) => {
+  //     res.render("index", {
+  //       msg: "Weeny!",
+  //       heroes: superhero_db
+  //     });
+  //   });
+  // });
 
   app.get("/hero", (req, res) => {
     db.Heroes.findAll({}).then((superhero_db) => {
