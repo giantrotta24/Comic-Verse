@@ -9,8 +9,8 @@ module.exports = (app) => {
       res.render("index", {
         heroes: superhero_db
       });
-    });
   });
+
 
   app.get("/hero", (req, res) => {
     db.Heroes.findAll({}).then((superhero_db) => {
