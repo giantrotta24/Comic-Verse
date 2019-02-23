@@ -70,9 +70,11 @@
             <p>{{character.personalLife}}</p>
             {{/if}}
 
+            {{#unless character.approved}}
             <form action="/api/approve/{{character.name}}?_method=PUT" method="POST">
                 <button type="submit" class="btn btn-danger"> {{character.name}}</button>
             </form>
+            {{/unless}}
         </div>
             <script>//
                 // accordionExpand.js
