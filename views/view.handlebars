@@ -28,7 +28,7 @@
                         <a class="dropdown-item" id="drops" href="/profile">Profile</a>
                         <a class="dropdown-item" id="drops" href="/editprofile">Edit Profile</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" id="drops" href="#">Contact-Us</a>
+                        {{!-- <a class="dropdown-item" id="drops" href="#">Contact-Us</a> --}}
                     </div>
                 </li>
                 <li class="nav-item">
@@ -45,22 +45,30 @@
                     <a class="nav-link" id="smallNavs" href="/signup">SIGN-UP</a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <form class="form-inline my-2 my-lg-0" action="/api" method="GET">
+                <input class="form-control mr-sm-2" type="search" id="name" name="name" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
         </div>
     </nav>
         <div class="container">
             <h2>{{character.name}}</h2>
+            {{#if character.secretIdentity}}
             <h3>Secret Identity</h3>
             <p>{{character.secretIdentity}}</p>
+            {{/if}}
+            {{#if character.earlyLife}}
             <h3>Early Life</h3>
             <p>{{character.earlyLife}}</p>
+            {{/if}}
+            {{#if character.currentHistory}}
             <h3>Current History</h3>
             <p>{{character.currentHistory}}</p>
+            {{/if}}
+            {{#if character.personalLife}}
             <h3>Personal Life</h3>
             <p>{{character.personalLife}}</p>
+            {{/if}}
         </div>
             <script>//
                 // accordionExpand.js
