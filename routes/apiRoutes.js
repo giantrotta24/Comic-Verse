@@ -40,7 +40,7 @@ module.exports = (app) => {
       fill = "villain";
     };
     console.log(results);
-    res.redirect("/view/" + fill + "/" + results);
+    res.redirect("/view/" + fill + "/" + req.body.name);
   });
 
   app.post("/api/heroes", (req, res) => {
