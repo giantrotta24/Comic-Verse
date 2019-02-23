@@ -28,7 +28,7 @@
                         <a class="dropdown-item" id="drops" href="/profile">Profile</a>
                         <a class="dropdown-item" id="drops" href="/editprofile">Edit Profile</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" id="drops" href="#">Contact-Us</a>
+                        {{!-- <a class="dropdown-item" id="drops" href="#">Contact-Us</a> --}}
                     </div>
                 </li>
                 <li class="nav-item">
@@ -45,8 +45,8 @@
                     <a class="nav-link" id="smallNavs" href="/signup">SIGN-UP</a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <form class="form-inline my-2 my-lg-0" action="/api" method="GET">
+                <input class="form-control mr-sm-2" type="search" id="name" name="name" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
         </div>
@@ -55,17 +55,17 @@
     <!-- INTRO AND SLIDESHOW OF COMICBOOK COVERS -->
     <div class="jumbotron topPageJumbo">
         <div class="w3-content w3-section" style="max-width:500px; float: right; overflow: auto;">
-            <img class="mySlides2" src="../heroPics/batgirl.jpg" style="width: 350px;
+            <img class="mySlides2" src="/images/heroPics/batgirl.jpg" style="width: 350px;
                         height: 430px;">
-            <img class="mySlides2" src="../../heroPics/captCover.png" style="width: 350px;
+            <img class="mySlides2" src="/images/heroPics/captCover.png" style="width: 350px;
                         height: 430px;">
-            <img class="mySlides2" src="../../heroPics/greenLanterArrow.jpg" style="width: 350px;
+            <img class="mySlides2" src="/images/heroPics/greenLanterArrow.jpg" style="width: 350px;
                         height: 430px;">
-            <img class="mySlides2" src="../../heroPics/supermanCover.jpeg" style="width: 350px;
+            <img class="mySlides2" src="/images/heroPics/supermanCover.jpeg" style="width: 350px;
                         height: 430px;">
-            <img class="mySlides2" src="../../heroPics/xmenCover.jpeg" style="width: 350px;
+            <img class="mySlides2" src="/images/heroPics/xmenCover.jpeg" style="width: 350px;
                         height: 430px;">
-            <img class="mySlides2" src="../../heroPics/hellboyPic.jpg" style="width: 350px;
+            <img class="mySlides2" src="/images/heroPics/hellboyPic.jpg" style="width: 350px;
                         height: 430px;">
         </div>
 
@@ -82,80 +82,80 @@
 
         {{!-- this is the small icon in jumbotron in home page right under welcome text --}}
         <p>
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-01.png" id="heroAndVillainIcons">
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-05.png" id="heroAndVillainIcons">
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-02.png" id="heroAndVillainIcons">
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-03.png" id="heroAndVillainIcons">
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-04.png" id="heroAndVillainIcons">
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-06.png" id="heroAndVillainIcons">
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-07.png" id="heroAndVillainIcons">
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-08.png" id="heroAndVillainIcons">
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-09.png" id="heroAndVillainIcons">
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-10.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-01.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-05.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-02.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-03.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-04.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-06.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-07.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-08.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-09.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-10.png" id="heroAndVillainIcons">
         </p>
         <p>
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-11.png" id="heroAndVillainIcons">
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-12.png" id="heroAndVillainIcons">
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-13.png" id="heroAndVillainIcons">
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-14.png" id="heroAndVillainIcons">
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-15.png" id="heroAndVillainIcons">
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-16.png" id="heroAndVillainIcons">
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-17.png" id="heroAndVillainIcons">
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-18.png" id="heroAndVillainIcons">
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-19.png" id="heroAndVillainIcons">
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-20.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-11.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-12.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-13.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-14.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-15.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-16.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-17.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-18.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-19.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-20.png" id="heroAndVillainIcons">
         </p>
          <p>
             
            
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-21.png" id="heroAndVillainIcons">
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-22.png" id="heroAndVillainIcons">
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-23.png" id="heroAndVillainIcons">
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-24.png" id="heroAndVillainIcons">
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-25.png" id="heroAndVillainIcons">
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-26.png" id="heroAndVillainIcons">
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-27.png" id="heroAndVillainIcons">
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-28.png" id="heroAndVillainIcons">
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-29.png" id="heroAndVillainIcons">
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-30.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-21.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-22.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-23.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-24.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-25.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-26.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-27.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-28.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-29.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-30.png" id="heroAndVillainIcons">
         </p>
           <p>
     
 
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-31.png" id="heroAndVillainIcons">
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-32.png" id="heroAndVillainIcons">
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-33.png" id="heroAndVillainIcons">
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-34.png" id="heroAndVillainIcons">
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-35.png" id="heroAndVillainIcons">
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-36.png" id="heroAndVillainIcons">
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-37.png" id="heroAndVillainIcons">
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-38.png" id="heroAndVillainIcons">
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-39.png" id="heroAndVillainIcons">
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-40.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-31.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-32.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-33.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-34.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-35.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-36.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-37.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-38.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-39.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-40.png" id="heroAndVillainIcons">
         </p>
         <p>
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-41.png" id="heroAndVillainIcons">
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-42.png" id="heroAndVillainIcons">
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-43.png" id="heroAndVillainIcons">
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-44.png" id="heroAndVillainIcons">
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-45.png" id="heroAndVillainIcons">
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-46.png" id="heroAndVillainIcons">
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-47.png" id="heroAndVillainIcons">
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-48.png" id="heroAndVillainIcons">
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-49.png" id="heroAndVillainIcons">
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-50.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-41.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-42.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-43.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-44.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-45.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-46.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-47.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-48.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-49.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-50.png" id="heroAndVillainIcons">
         </p>
         <p>
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-51.png" id="heroAndVillainIcons">
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-52.png" id="heroAndVillainIcons">
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-53.png" id="heroAndVillainIcons">
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-54.png" id="heroAndVillainIcons">
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-55.png" id="heroAndVillainIcons">
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-56.png" id="heroAndVillainIcons">
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-57.png" id="heroAndVillainIcons">
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-58.png" id="heroAndVillainIcons">
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-59.png" id="heroAndVillainIcons">
-            <img src="../../images/heroAndHeroIcons/PNG_Color/heroes-and-villains-60.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-51.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-52.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-53.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-54.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-55.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-56.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-57.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-58.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-59.png" id="heroAndVillainIcons">
+            <img src="/images/heroAndHeroIcons/PNG_Color/heroes-and-villains-60.png" id="heroAndVillainIcons">
         </p>
         {{!-- <br />
             <br />
@@ -186,7 +186,7 @@
                     persona were ever harmed.</p>
             </div>
 
-            <img class="mySlides" src="../../heroPics/jokerHa.jpeg" style="width: 350px;
+            <img class="mySlides" src="/images/heroPics/jokerHa.jpeg" style="width: 350px;
             height: 430px;">
 
             <div class="mySlides w3-container w3-xlarge w3-white w3-card-4">
@@ -200,7 +200,7 @@
 
             </div>
 
-            <img class="mySlides" src="../../heroPics/batmanHoldingCatWoman.jpeg" style="width: 350px;
+            <img class="mySlides" src="/images/heroPics/batmanHoldingCatWoman.jpeg" style="width: 350px;
             height: 430px;">
         </div>
     </div>
@@ -238,7 +238,7 @@
                 </div>
             </div>
             <div class="card" style="width: 18rem; float: right;">
-                <img class="card-img-top" src="../../villianPics/doom2.jpg" alt="Card image cap">
+                <img class="card-img-top" src="/images/villianPics/doom2.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h2>DR. DOOM</h2>
                     <p class="card-text">Victor Von Doom is a polymath and scientist who possesses genius-level

@@ -7,7 +7,6 @@ module.exports = (app) => {
   app.get("/", (req, res) => {
     db.Heroes.findAll({}).then((superhero_db) => {
       res.render("index", {
-        msg: "Weeny!",
         heroes: superhero_db
       });
     });
@@ -45,19 +44,11 @@ module.exports = (app) => {
     });
   });
 
-  // Load example page and pass in an example by id
-  app.get("/example/:id", (req, res) => {
-    db.Example.findOne({ where: { id: req.params.id } }).then((dbExample) => {
-      res.render("example", {
-        example: dbExample
-      });
-    });
-  });
-
   //trying to see if click on clash can go to the clash page
   app.get("/clash", (req, res) => {
     res.render("clash");
   });
+
   app.get("/add", (req, res) => {
     res.render("add");
   });
