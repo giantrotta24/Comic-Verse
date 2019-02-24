@@ -3,8 +3,7 @@
     <!-- Content here -->
     <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
         <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#divBar"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#divBar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -20,8 +19,7 @@
                     <a class="nav-link" id="navs" href="/villain">Villains</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Dropdown
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropMenu">
@@ -51,28 +49,29 @@
             </form>
         </div>
     </nav>
-        <div class="container">
-            <h2>{{character.name}}</h2>
-            {{#if character.secretIdentity}}
-            <h3>Secret Identity</h3>
-            <p>{{character.secretIdentity}}</p>
-            {{/if}}
-            {{#if character.earlyLife}}
-            <h3>Early Life</h3>
-            <p>{{character.earlyLife}}</p>
-            {{/if}}
-            {{#if character.currentHistory}}
-            <h3>Current History</h3>
-            <p>{{character.currentHistory}}</p>
-            {{/if}}
-            {{#if character.personalLife}}
-            <h3>Personal Life</h3>
-            <p>{{character.personalLife}}</p>
-            {{/if}}
+    <div class="container">
+        <h2>{{character.name}}</h2>
+        {{#if character.secretIdentity}}
+        <h3>Secret Identity</h3>
+        <p>{{character.secretIdentity}}</p>
+        {{/if}}
+        {{#if character.earlyLife}}
+        <h3>Early Life</h3>
+        <p>{{character.earlyLife}}</p>
+        {{/if}}
+        {{#if character.currentHistory}}
+        <h3>Current History</h3>
+        <p>{{character.currentHistory}}</p>
+        {{/if}}
+        {{#if character.personalLife}}
+        <h3>Personal Life</h3>
+        <p>{{character.personalLife}}</p>
+        {{/if}}
 
-            {{#unless character.approved}}
-            <form action="/api/approve/{{character.name}}?_method=PUT" method="POST">
-                <button type="submit" class="btn btn-danger"> {{character.name}}</button>
-            </form>
-            {{/unless}}
-        </div>
+        {{#unless character.approved}}
+        <form action="/api/approve/{{character.name}}?_method=PUT" method="POST">
+            <button type="submit" class="btn btn-danger"> {{character.name}}</button>
+        </form>
+        {{/unless}}
+    </div>
+</div>

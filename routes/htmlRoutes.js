@@ -14,7 +14,7 @@ module.exports = (app) => {
     res.render("index", {
       randHero,
       randVillain
-    })
+    });
   });
 
 

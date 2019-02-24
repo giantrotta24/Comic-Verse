@@ -3,8 +3,7 @@
     <!-- Content here -->
     <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
         <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#divBar"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#divBar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -20,8 +19,7 @@
                     <a class="nav-link" id="navs" href="/villain">Villains</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Dropdown
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropMenu">
@@ -51,49 +49,51 @@
             </form>
         </div>
     </nav>
-        <div class="container">
-            <h1>First Pag Add</h1>
-            <div class="row">
+    <div class="container">
+        <h1>First Pag Add</h1>
+        <div class="row">
+            {{#each villains}}
+                {{#if approved}}
+                    <a href="accordion.html?#{{this.name}}">{{this.name}}</a>
+                {{/if}}
+            {{/each}}
+        </div>
+    </div>       
+        
+    <div class="container">
+        <h1>Second Page Add</h1>
+        <div class="row">
+            <div class="panel list-group">
                 {{#each villains}}
                     {{#if approved}}
-                        <a href="accordion.html?#{{this.name}}">{{this.name}}</a>
+                        <a id="/view/villain/{{this.name}}"></a>
+                        <button class="list-group-item" data-toggle="collapse" data-target="#item-1" data-parent="#accordion"><strong>{{this.name}}</strong></button>
+                        <div id="item-1" class="collapse">
+                            No. What is on second.
+                        </div>
                     {{/if}}
                 {{/each}}
             </div>
-        </div>       
-        
-        <div class="container">
-            <h1>Second Page Add</h1>
-            <div class="row">
-               <div class="panel list-group">
-                    {{#each villains}}
-                        {{#if approved}}
-                            <a id="/view/villain/{{this.name}}"></a>
-                            <button class="list-group-item" data-toggle="collapse" data-target="#item-1" data-parent="#accordion"><strong>{{this.name}}</strong></button>
-                            <div id="item-1" class="collapse">
-                                No. What is on second.
-                            </div>
-                        {{/if}}
-                    {{/each}}
-                </div>
-            </div>
         </div>
-            <script>//
-                // accordionExpand.js
-                //
-                // Checks for hash in url and
-                // expands an accordion list
-                // =============================
-                jQuery(document).ready(function($) {
+    </div>
+</div>
+<script>
+    //
+    // accordionExpand.js
+    //
+    // Checks for hash in url and
+    // expands an accordion list
+    // =============================
+    jQuery(document).ready(function($) {
                     
-                    var hash        = window.location.hash, // Hash from the url
-                    accordionGroup  = $('.panel.list-group'), // List groups
-                    accordionExists = accordionGroup.length;
+        var hash        = window.location.hash, // Hash from the url
+        accordionGroup  = $('.panel.list-group'), // List groups
+        accordionExists = accordionGroup.length;
                     
-                    // If url fragment and accordion both exist...
-                    if(hash && accordionExists) {
-                      // Find the button sibling of the anchor and click it
-                      accordionGroup.find(hash).siblings('button.list-group-item').click();
-                    }
-                });
-                </script>
+        // If url fragment and accordion both exist...
+        if(hash && accordionExists) {
+            // Find the button sibling of the anchor and click it
+            accordionGroup.find(hash).siblings('button.list-group-item').click();
+        }
+    });
+</script>
