@@ -128,7 +128,7 @@ a:hover{
   top: 0;
 }
 .topPageJumbo, .triviaDiv, .card, #profileBGTrans{ 
-    background-color:#ffffff89;
+    background-color:#ffffff9a;
     box-shadow: 0 7px 7px rgba(0, 0, 0, 0.646), 0 12px 40px rgba(0, 0, 0, 0.329);
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
@@ -139,7 +139,7 @@ a:hover{
 
 #heroAndVillainDiv, .card-body{
   /* z-index: -1; */
-  background-color:#ffffff85;
+  background-color:#ffffff98;
   box-shadow: 0 7px 7px rgba(0, 0, 0, 0.625), 0 12px 40px rgba(0, 0, 0, 0.356);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 
