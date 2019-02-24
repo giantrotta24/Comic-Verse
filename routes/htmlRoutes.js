@@ -1,16 +1,20 @@
 /* eslint-disable camelcase */
 /* eslint-disable max-lines-per-function */
 const db = require("../models");
-const path = require("path");
 
 module.exports = (app) => {
   // Load index page
-  app.get("/", (req, res) => {
-    db.Heroes.findAll({}).then((superhero_db) => {
-      res.render("index", {
-        heroes: superhero_db
-      });
-    });
+  app.get("/", async(req, res) => {
+    const heroes = await db.Heroes.findAll({});
+    const villains = await db.Villains.findAll({});
+    const randomHero = Math.floor(Math.random() * heroes.length);
+    const randomVillain = Math.floor(Math.random() * villains.length);
+    const randHero = heroes[randomHero];
+    const randVillain = villains[randomVillain];
+    res.render("index", {
+      randHero,
+      randVillain
+    })
   });
 
 
@@ -53,10 +57,6 @@ module.exports = (app) => {
 
   app.get("/add", (req, res) => {
     res.render("add");
-  });
-
-  app.get("/add2", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/add.html"));
   });
 
   // Render 404 page for any unmatched routes

@@ -18,11 +18,9 @@ module.exports = (app) => {
     const villain = await db.Villains.findOne({ where: { name: req.params.name } });
     if (villain === null) {
       results = hero;
-      fill = "hero";
     }
     else {
       results = villain;
-      fill = "villain";
     };
     console.log(results);
     return res.json(results);
