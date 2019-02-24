@@ -6,7 +6,9 @@ module.exports = {
         res.render('login');
     },
     profile: (req, res) => {
-        res.render('profile');
+        console.log(req.user);
+        let {user} = req;
+        res.render('profile', user);
     },
     logout: (req, res) => {
         req.session.destroy((err) => {
