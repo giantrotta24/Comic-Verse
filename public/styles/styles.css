@@ -25,6 +25,9 @@ a{
 a:hover{
   color: rgb(215, 18, 87);
 }
+.mySlides2{
+  float: right;
+}
 
 /* SUPERHERO COLOR ON HOVERING ON THE NAVS (TESTING) */
 /* #home:hover{
