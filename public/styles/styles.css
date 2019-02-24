@@ -2,7 +2,7 @@
 /* ALOT OF SELECTOR/PROPS SO MAKE A NEW FILE ******************** */
 body{
   padding-top: 80px;
-  padding-bottom: 70px;
+  /* padding-bottom: 70px; */
 }
 
 /* basically the far bottom of the home page. Getting it some breathing room*/
