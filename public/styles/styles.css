@@ -1,9 +1,14 @@
 
 /* ALOT OF SELECTOR/PROPS SO MAKE A NEW FILE ******************** */
-body {
+body{
   padding-top: 80px;
+  padding-bottom: 70px;
 }
 
+/* basically the far bottom of the home page. Getting it some breathing room*/
+#heroAndVillainDiv{
+  padding: 40px;
+} 
 #home:hover, #navs:hover, #navbarDropdown:hover, #drops:hover, #smallNavs:hover{
   background-color: rgb(45, 40, 40);
   color:  #3ef43e;
@@ -123,8 +128,8 @@ a:hover{
   top: 0;
 }
 .topPageJumbo, .triviaDiv, .card, #profileBGTrans{ 
-    background-color:#ffffff4d;
-    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.12), 0 12px 40px rgba(0,0,0,0.24);
+    background-color:#ffffff89;
+    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.646), 0 12px 40px rgba(0, 0, 0, 0.329);
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 #profileBGTrans{ 
@@ -134,8 +139,8 @@ a:hover{
 
 #heroAndVillainDiv, .card-body{
   /* z-index: -1; */
-  background-color:#ffffff4d;
-  box-shadow: 0 7px 7px rgba(0, 0, 0, 0.12), 0 12px 40px rgba(0,0,0,0.24);
+  background-color:#ffffff85;
+  box-shadow: 0 7px 7px rgba(0, 0, 0, 0.625), 0 12px 40px rgba(0, 0, 0, 0.356);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 
 }
