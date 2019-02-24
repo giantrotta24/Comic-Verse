@@ -204,25 +204,21 @@
     <div class="container">
         <div class="row">
             <div class="col" id="heroAndVillainDiv">
-
-                <br />
-                <br />
-                <h1 style="text-align: center;">HERO & VILLAIN OF THE DAY</h1>
-                <br />
+                <p style="text-align: center; font-size: 70px">FEATURED HERO & VILLAIN</p>
             </div>
         </div>
-        <div class="container" id="heroAndVillainDiv">
-            <div class="card" style="width: 18rem; float: left;">
-                <img class="card-img-top" id="randomHero" <!--src="/images/heroPics/ironMan.jpeg"alt="Card image cap"-->>
-                <div class="card-body">
+        <div class="container" id="bothCardsHV">
+            <div class="card" style="width: 22rem; float: left;">
+                <img class="card-img-top" id="randomHero" src="/images/heroPics/ironMan.jpeg"alt="Card image cap">
+                <div class="card-body" style="width: 22rem; float: left;"></div>>
                     <h2>{{randHero.name}}</h2>
                     <p class="card-text">{{randHero.currentHistory}}</p>
                     <a href="/view/hero/{{randHero.name}}">Go to Bio</a>
                 </div>
             </div>
-            <div class="card" style="width: 18rem; float: right;">
+            <div class="card" style="width: 22rem; float: right;">
                 <img class="card-img-top" id ="randomVillain" src="/images/villianPics/doom2.jpg" alt="Card image cap">
-                <div class="card-body">
+                <div class="card-body" style="width: 20rem; float: left;"></div>>
                     <h2>{{randVillain.name}}</h2>
                     <p class="card-text">{{randVillain.currentHistory}}</p>
                     <a href="/view/villain/{{randVillain.name}}">Go to Bio</a>
