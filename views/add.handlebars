@@ -1,10 +1,9 @@
 <div class="SignupSuperSizer"></div>
-<div class="container ">
+<div class="container">
     <!-- Content here -->
     <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
         <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#divBar"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#divBar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -20,8 +19,7 @@
                     <a class="nav-link" id="navs" href="/villain">Villains</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Dropdown
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropMenu">
@@ -52,71 +50,42 @@
         </div>
     </nav>
     <div class="container setUpForAdd">
-    <div class="row">
-
-        <div class="col-12">
-
-            <div class="card">
-                <div class="card-header">
-                    <h3><strong>Add Character</strong></h3>
-                </div>
-                <div class="card-body">
-                    <form method="POST" role="form">
-
-                    <div class="form-group">
-                        <label for="">Name</label>
-                        <input type="text" class="form-control" id="name" placeholder="">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3><strong>Add Character</strong></h3>
                     </div>
-
-                    <div class="form-group">
-                        <label for="">Secret Identity</label>
-                        <input type="text" class="form-control" id="secretIdentity" placeholder="">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="">Early Life</label>
-                        <input type="text" class="form-control" id="earlyLife" placeholder="">
-                    </div>
-                    <div class="form-group">
-                        <label for="">Current History</label>
-                        <input type="text" class="form-control" id="currentHistory" placeholder="">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="">Personal Life</label>
-                        <input type="text" class="form-control" id="personalLife" placeholder="">
-                    </div>
-                    </form>
-                    <br>
-                    <div class="text-right">
-                        <button type="submit" class="btn btn-primary btn-md" id="add-btn"><span
-                                class="fa fa-fire"></span> ADD TO THE COMIC-VERSE</button>
+                    <div class="card-body">
+                        <form method="POST" role="form">
+                            <div class="form-group">
+                                <label for="">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Secret Identity</label>
+                                <input type="text" class="form-control" id="secretIdentity" placeholder="">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Early Life</label>
+                                <input type="text" class="form-control" id="earlyLife" placeholder="">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Current History</label>
+                                <input type="text" class="form-control" id="currentHistory" placeholder="">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Personal Life</label>
+                                <input type="text" class="form-control" id="personalLife" placeholder="">
+                            </div>
+                        </form>
+                        <br>
+                        <div class="text-right">
+                            <button type="submit" class="btn btn-primary btn-md" id="add-btn"><span class="fa fa-fire"></span> ADD TO THE COMIC-VERSE</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    </div>
-    </div>
-    
-    
-    {{!-- We are going change this up but for now but this a reference --}}
-    <script type="text/javascript">
-        // Question: What does this code do?
-        $("#add-btn").on("click", function (event) {
-            event.preventDefault();
-            var newCharacter = {
-                name: $("#name").val().trim(),
-                role: $("#role").val().trim(),
-                age: $("#age").val().trim(),
-                forcePoints: $("#force-points").val().trim()
-            };
-
-            // Question: What does this code do??
-            $.post("/api/characters", newCharacter)
-                .then(function (data) {
-                    console.log("add.html", data);
-                    alert("Adding character...");
-                });
-        });
-    </script>
+</div>

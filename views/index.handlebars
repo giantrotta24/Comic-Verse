@@ -3,8 +3,7 @@
     <!-- Content here -->
     <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
         <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#divBar"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#divBar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -20,8 +19,7 @@
                     <a class="nav-link" id="navs" href="/villain">Villains</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Dropdown
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropMenu">
@@ -55,18 +53,12 @@
     <!-- INTRO AND SLIDESHOW OF COMICBOOK COVERS -->
     <div class="jumbotron topPageJumbo">
         <div class="w3-content w3-section" style="max-width:500px; float: right; overflow: auto;">
-            <img class="mySlides2" src="/images/heroPics/batgirl.jpg" style="width: 350px;
-                        height: 430px;">
-            <img class="mySlides2" src="/images/heroPics/captCover.png" style="width: 350px;
-                        height: 430px;">
-            <img class="mySlides2" src="/images/heroPics/greenLanterArrow.jpg" style="width: 350px;
-                        height: 430px;">
-            <img class="mySlides2" src="/images/heroPics/supermanCover.jpeg" style="width: 350px;
-                        height: 430px;">
-            <img class="mySlides2" src="/images/heroPics/xmenCover.jpeg" style="width: 350px;
-                        height: 430px;">
-            <img class="mySlides2" src="/images/heroPics/hellboyPic.jpg" style="width: 350px;
-                        height: 430px;">
+            <img class="mySlides2" src="/images/heroPics/batgirl.jpg" style="width: 350px; height: 430px;">
+            <img class="mySlides2" src="/images/heroPics/captCover.png" style="width: 350px; height: 430px;">
+            <img class="mySlides2" src="/images/heroPics/greenLanterArrow.jpg" style="width: 350px; height: 430px;">
+            <img class="mySlides2" src="/images/heroPics/supermanCover.jpeg" style="width: 350px; height: 430px;">
+            <img class="mySlides2" src="/images/heroPics/xmenCover.jpeg" style="width: 350px; height: 430px;">
+            <img class="mySlides2" src="/images/heroPics/hellboyPic.jpg" style="width: 350px; height: 430px;">
         </div>
 
         <h1 class="display-4">COMIC-VERSE</h1>
@@ -218,31 +210,17 @@
             <div class="card" style="width: 18rem; float: left;">
                 <img class="card-img-top" src="/images/heroPics/ironMan.jpeg" alt="Card image cap">
                 <div class="card-body">
-                    <h2>IRON MAN</h2>
-                    <p class="card-text">A wealthy American business magnate, playboy, and ingenious scientist, Anthony
-                        Edward "Tony" Stark suffers a severe chest injury during a kidnapping. When his captors attempt
-                        to
-                        force him to build a weapon of mass destruction, he instead creates a powered suit of armor to
-                        save
-                        his life and escape captivity. Later, Stark develops his suit, adding weapons and other
-                        technological devices he designed through his company, Stark Industries. He uses the suit and
-                        successive versions to protect the world as Iron Man. Although at first concealing his true
-                        identity, Stark eventually declared that he was, in fact, Iron Man in a public announcement.</p>
-                    <a href="#">Go to Bio</a>
+                    <h2>{{randHero.name}}</h2>
+                    <p class="card-text">{{randHero.currentHistory}}</p>
+                    <a href="/view/hero/{{randHero.name}}">Go to Bio</a>
                 </div>
             </div>
             <div class="card" style="width: 18rem; float: right;">
                 <img class="card-img-top" src="/images/villianPics/doom2.jpg" alt="Card image cap">
                 <div class="card-body">
-                    <h2>DR. DOOM</h2>
-                    <p class="card-text">Victor Von Doom is a polymath and scientist who possesses genius-level
-                        intellect.
-                        Throughout most of his publication history, he has been depicted as one of the most intelligent
-                        humans in the Marvel Universe. On the other hand, Richards managed to process all the computer
-                        calculations necessary to save the life of a disintegrating Kitty Pryde by himself, which is a
-                        feat
-                        that Doom at the time professed to be unable to do.</p>
-                    <a href="#">Go to Bio</a>
+                    <h2>{{randVillain.name}}</h2>
+                    <p class="card-text">{{randVillain.currentHistory}}</p>
+                    <a href="/view/villain/{{randVillain.name}}">Go to Bio</a>
                 </div>
             </div>
         </div>
@@ -280,18 +258,3 @@
         setTimeout(carousel2, 4000);
     }
 </script>
-
-
-
-<!-- </div> -->
-<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="../../models/index.js"></script>  -->
