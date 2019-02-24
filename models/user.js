@@ -54,6 +54,12 @@ module.exports = (sequelize, DataTypes) => {
                 }
             }
         },
+        bio: {
+            type: DataTypes.TEXT
+        },
+        favCharacter: {
+            type: DataTypes.STRING
+        },
         email: {
             type: DataTypes.STRING,
             validate: {
