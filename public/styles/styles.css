@@ -55,6 +55,9 @@ a:hover{
 #heroAndVillainIcons{
   width: 25px;
   height: 25px;
+  -webkit-filter: drop-shadow(5px 5px 5px rgb(77, 71, 71));
+  filter: drop-shadow(5px 5px 5px rgb(70, 65, 65));
+
 }
 #heroAndVillainIcons:hover{
   width: 35px;
