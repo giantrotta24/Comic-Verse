@@ -52,8 +52,8 @@ module.exports = (app) => {
   });
 
   app.get("/api" , async(req, res) => {
-    const hero = await db.Heroes.findOne({ where: { name: req.query.searchName } });
-    const villain = await db.Villains.findOne({ where: { name: req.query.searchName } });
+    const hero = await db.Heroes.findOne({ where: { name: req.query.name } });
+    const villain = await db.Villains.findOne({ where: { name: req.query.name } });
     if (villain === null && hero === null) {
       res.redirect("/add");
     }

@@ -3,7 +3,7 @@
     <!-- Content here -->
     <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
         <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#divBar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler btn btn-outline-success" type="button" id="styleNavbarBtn" data-toggle="collapse" data-target="#divBar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -26,6 +26,7 @@
                         <a class="dropdown-item" id="drops" href="/profile">Profile</a>
                         <a class="dropdown-item" id="drops" href="/editprofile">Edit Profile</a>
                         <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" id="drops" href="#">Log Out</a>
                         {{!-- <a class="dropdown-item" id="drops" href="#">Contact-Us</a> --}}
                     </div>
                 </li>
@@ -43,10 +44,12 @@
                     <a class="nav-link" id="smallNavs" href="/signup">SIGN-UP</a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0" action="/api" method="GET">
-                <input class="form-control mr-sm-2" type="search" id="searchName" name="searchName" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            <div id="styleNavbarForm">
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" id="styleNavSearchBar" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" id="styleNavSeachButton" type="submit">Search</button>
             </form>
+            </div>
         </div>
     </nav>
     <br />
@@ -139,7 +142,7 @@
         </div>
         <div class="container" id="bothCardsHV">
             <div class="card" style="width: 22rem; float: left;">
-                <img class="card-img-top" id="randomHero" src="/images/heroPics/ironMan.jpeg"alt="Card image cap">
+                <img class="card-img-top" id="randomHero" src="{{randHero.image}}"alt="Card image cap">
                 <div class="card-body" style="width: 22rem; float: left;"></div>>
                     <h2>{{randHero.name}}</h2>
                     <p class="card-text">{{randHero.currentHistory}}</p>
@@ -147,7 +150,7 @@
                 </div>
             </div>
             <div class="card" style="width: 22rem; float: right;">
-                <img class="card-img-top" id ="randomVillain" src="/images/villianPics/doom2.jpg" alt="Card image cap">
+                <img class="card-img-top" id ="randomVillain" src="{{randVillain.image}}" alt="Card image cap">
                 <div class="card-body" style="width: 20rem; float: left;"></div>>
                     <h2>{{randVillain.name}}</h2>
                     <p class="card-text">{{randVillain.currentHistory}}</p>
