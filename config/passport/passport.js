@@ -51,7 +51,11 @@ module.exports = (passport, user) => {
                     email,
                     password: userPassword,
                     name: req.body.name,
-                    username: req.body.username
+                    username: req.body.username,
+                    location: req.body.location,
+                    bio: req.body.bio,
+                    image: req.body.image,
+                    favCharacter: req.body.favCharacter
                 };
 
                 // eslint-disable-next-line no-unused-vars
