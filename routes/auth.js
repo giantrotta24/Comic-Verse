@@ -13,12 +13,14 @@ module.exports = (app, passport) => {
 
     app.post('/signup', passport.authenticate('local-signup', {
         successRedirect: '/profile',
-        failuteRedirect: '/signup'
+        failuteRedirect: '/signup',
+        failureFlash: true
     }));
 
     app.post('/login', passport.authenticate('local-login', {
         successRedirect: '/profile',
-        failureRedirect: '/login'
+        failureRedirect: '/login',
+        failureFlash: true
     }));
 
     // eslint-disable-next-line consistent-return
@@ -28,5 +30,4 @@ module.exports = (app, passport) => {
         }
         res.redirect('/login');
     }
-
 };

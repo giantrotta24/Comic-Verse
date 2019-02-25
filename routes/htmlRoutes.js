@@ -52,7 +52,7 @@ module.exports = (app) => {
 
   //trying to see if click on clash can go to the clash page
   app.get("/clash", (req, res) => {
-    res.render("clash");
+    res.render("Clash");
   });
 
   app.get("/add", (req, res) => {
