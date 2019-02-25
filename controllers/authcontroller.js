@@ -6,7 +6,6 @@ module.exports = {
         res.render('login');
     },
     profile: (req, res) => {
-        console.log(req.user);
         let {user} = req;
         res.render('profile', user);
     },

@@ -60,7 +60,7 @@
                 <center>
                     <a href="#aboutModal" data-toggle="modal" data-target="#myModal"><img src="{{image}}" name="aboutme"
                             width="140" height="140" class="img-circle"></a>
-                    <h3>{{name}}</h3>
+                    <h3>{{username}}</h3>
                     <em>click my face for more</em>
                 </center>
             </div>
@@ -71,7 +71,7 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-                            <h4 class="modal-title" id="myModalLabel">More About {{name}}</h4>
+                            <h4 class="modal-title" id="myModalLabel">More About {{username}}</h4>
                         </div>
                         <div class="modal-body">
                             <center>
@@ -80,23 +80,20 @@
                                 <h3 class="media-heading">{{name}} <small>{{location}}</small></h3>
 
                                 {{!-- need some logic for add their comic book characters --}}
-                                <span><strong>Favorite Characters:</strong></span>
-                                <span class="label label-warning">Batman</span>
-                                <span class="label label-info">Joker</span>
-                                <span class="label label-info">Spider-man</span>
-                                <span class="label label-success">DareDevil</span>
+                                <span><strong>Favorite Character:</strong></span>
+                                <span class="label">{{favCharacter}}</span>
                             </center>
                             <hr>
                             <center>
                                 <p class="text-left"><strong>Bio: </strong><br>
-                                    I love super heroes ANY! I work at Dairy Queen and love icecream.</p>
+                                    {{bio}}</p>
                                 <br>
                             </center>
                         </div>
                         <div class="modal-footer">
                             <center>
                                 <button type="button" class="btn btn-default" data-dismiss="modal">I've heard enough
-                                    about {{name}}</button>
+                                    about {{username}}</button>
                             </center>
                         </div>
                     </div>
