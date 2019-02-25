@@ -8,5 +8,10 @@
 }
 #heroStylingBoxes, #villainStylingBoxes{
     padding: 5px;
+
+}
+#heroStylingBoxes:hover{
+    /* width: 70px; */
+    height: 90px;
 }
 
