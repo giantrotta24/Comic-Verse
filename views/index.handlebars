@@ -26,7 +26,7 @@
                         <a class="dropdown-item" id="drops" href="/profile">Profile</a>
                         <a class="dropdown-item" id="drops" href="/editprofile">Edit Profile</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" id="drops" href="#">Log Out</a>
+                        <a class="dropdown-item" id="drops" href="/logout">Log Out</a>
                         {{!-- <a class="dropdown-item" id="drops" href="#">Contact-Us</a> --}}
                     </div>
                 </li>
@@ -142,7 +142,7 @@
         </div>
         <div class="container" id="bothCardsHV">
             <div class="card" style="width: 22rem; float: left;">
-                <img class="card-img-top" id="randomHero" src="{{randHero.image}}"alt="Card image cap">
+                <img class="card-img-top" id="randomHero" src="{{randHero.image}}" alt="Card image cap">
                 <div class="card-body" style="width: 22rem; float: left;"></div>>
                     <h2>{{randHero.name}}</h2>
                     <p class="card-text">{{randHero.currentHistory}}</p>
