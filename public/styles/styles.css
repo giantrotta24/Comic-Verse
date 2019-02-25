@@ -9,9 +9,47 @@ body{
 #heroAndVillainDiv{
   padding: 40px;
 } 
-#home:hover, #navs:hover, #navbarDropdown:hover, #drops:hover, #smallNavs:hover{
+
+/* hover makes font bigger than normal */
+ #home:hover, #navs:hover, #navbarDropdown:hover, #drops:hover, #smallNavs:hover{
   background-color: rgb(45, 40, 40);
   color:  #3ef43e;
+  font-size: 40px;
+}
+#styleNavbarBtn:hover{
+  width: 70px;
+  height: 40px;
+  color:  #3ef43e;
+}
+/* #styleNavSearchBar:hover{
+  width: 460px;
+  height: 50px;
+}*/
+#styleNavSeachButton:hover{
+  width: 75px;
+  height: 50px;
+  font-size: 20px;
+  padding-bottom: 20px;
+  color: black; 
+} 
+#styleNavbarForm:hover{
+  /* margin: 10px; */
+  padding-top: 30px;
+  padding-right: 30px; 
+  padding-bottom: 30px
+
+  /* padding-bottom: 100px; */
+}
+
+/* #styleNavbarBtn{
+  -webkit-transition: color 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out;
+  -o-transition: color 0.2s ease-out;
+  -ms-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+} */
+#home:hover{
+  color: rgb(159, 237, 232);
 }
 .list-group-item {
   line-height: 2.5;
@@ -164,7 +202,7 @@ a:hover{
   color: rgb(0, 0, 0);
 }
 
-#home, #home:hover{
+#home{
   color: rgb(159, 237, 232);
   font-size: 30px;
 }
