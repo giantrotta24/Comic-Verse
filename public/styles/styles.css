@@ -33,13 +33,13 @@ body{
   padding-bottom: 20px;
   color: black; 
 } 
+
+/* that is finally in a good position. No lags or spasms in
+some sizes of the browser window no touchy */
 #styleNavbarForm:hover{
   /* margin: 10px; */
   padding-top: 30px;
-  padding-right: 30px; 
   padding-bottom: 30px
-
-  /* padding-bottom: 100px; */
 }
 
 /* #styleNavbarBtn{
@@ -79,9 +79,11 @@ a:hover{
 #backToHeroesIndex, #backToVillainsIndex{
   font-size: 19px;
   float: right;
+  color:  #10ab10;
 }
 #backToHeroesIndex:hover, #backToVillainsIndex:hover{
 font-size: 30px;
+color:  #27df27;
 }
 /* SUPERHERO COLOR ON HOVERING ON THE NAVS (TESTING) */
 /* #home:hover{
