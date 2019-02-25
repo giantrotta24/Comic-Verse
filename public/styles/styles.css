@@ -14,7 +14,7 @@ body{
  #home:hover, #navs:hover, #navbarDropdown:hover, #drops:hover, #smallNavs:hover{
   background-color: rgb(45, 40, 40);
   color:  #3ef43e;
-  font-size: 40px;
+  font-size: 35px;
 }
 
 #styleNavbarBtn:hover{
@@ -192,12 +192,12 @@ color:  #27df27;
 
 
 #heroAndVillainDiv{
-  /* z-index: -1; */
+  /* z-index: -1;*/
   background-color:#ffffff9a;
   box-shadow: 0 7px 7px rgba(0, 0, 0, 0.625), 0 12px 40px rgba(0, 0, 0, 0.356);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 
-}
+} 
 
 
 .triviaDiv{
