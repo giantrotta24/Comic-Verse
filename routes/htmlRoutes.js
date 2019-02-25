@@ -60,10 +60,6 @@ module.exports = (app) => {
     res.render("add");
   });
 
-  app.get("/add2", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/add.html"));
-  });
-
   // Render 404 page for any unmatched routes
   app.get("*", (req, res) => {
     res.render("404");
