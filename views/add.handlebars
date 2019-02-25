@@ -60,32 +60,47 @@
                         <h3><strong>Add Character</strong></h3>
                     </div>
                     <div class="card-body">
-                        <form method="POST" role="form">
+                        <form action="/api" method="POST">
                             <div class="form-group">
                                 <label for="">Name</label>
-                                <input type="text" class="form-control" id="name" placeholder="">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="">
                             </div>
                             <div class="form-group">
                                 <label for="">Secret Identity</label>
-                                <input type="text" class="form-control" id="secretIdentity" placeholder="">
+                                <input type="text" class="form-control" id="secretIdentity" name="secretIdentity" placeholder="">
                             </div>
                             <div class="form-group">
                                 <label for="">Early Life</label>
-                                <input type="text" class="form-control" id="earlyLife" placeholder="">
+                                <input type="text" class="form-control" id="earlyLife" name="earlyLife" placeholder="">
                             </div>
                             <div class="form-group">
                                 <label for="">Current History</label>
-                                <input type="text" class="form-control" id="currentHistory" placeholder="">
+                                <input type="text" class="form-control" id="currentHistory" name="currentHistory" placeholder="">
                             </div>
                             <div class="form-group">
-                                <label for="">Personal Life</label>
-                                <input type="text" class="form-control" id="personalLife" placeholder="">
+                                <label for="">Publisher</label>
+                                <input type="text" class="form-control" id="publisher" name="publisher" placeholder="">
+                            </div>
+                            <div class="form-group">
+                                <label for="">First Appearance</label>
+                                <input type="text" class="form-control" id="firstAppearance" name="firstAppearance" placeholder="">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Image</label>
+                                <input type="text" class="form-control" id="image" name="image" placeholder="">
+                            </div>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-primary">
+                                    <input type="radio" name="Hero" id="hero" autocomplete="off">Hero
+                                </label>
+                                <label class="btn btn-primary">
+                                    <input type="radio" name="Villain" id="villain" autocomplete="off">Villain
+                                </label>
+                            </div>                            
+                            <div class="text-right">
+                                <button type="submit" class="btn btn-primary btn-md" id="add-btn"><span class="fa fa-fire"></span>ADD TO THE COMIC-VERSE</button>
                             </div>
                         </form>
-                        <br>
-                        <div class="text-right">
-                            <button type="submit" class="btn btn-primary btn-md" id="add-btn"><span class="fa fa-fire"></span> ADD TO THE COMIC-VERSE</button>
-                        </div>
                     </div>
                 </div>
             </div>

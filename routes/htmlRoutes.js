@@ -1,6 +1,7 @@
 /* eslint-disable camelcase */
 /* eslint-disable max-lines-per-function */
 const db = require("../models");
+const path = require("path");
 
 module.exports = (app) => {
   // Load index page
@@ -64,3 +65,5 @@ module.exports = (app) => {
     res.render("404");
   });
 };
+
+
