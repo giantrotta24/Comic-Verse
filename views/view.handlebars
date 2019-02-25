@@ -53,27 +53,7 @@
             </div>
         </div>
     </nav>
-<<<<<<< HEAD
-    <div class="container" id="divOfOneCharacter">
-        <h2>{{character.name}}</h2>
-        {{#if character.secretIdentity}}
-        <h3>Secret Identity</h3>
-        <p>{{character.secretIdentity}}</p>
-        {{/if}}
-        {{#if character.earlyLife}}
-        <h3>Early Life</h3>
-        <p>{{character.earlyLife}}</p>
-        {{/if}}
-        {{#if character.currentHistory}}
-        <h3>Current History</h3>
-        <p>{{character.currentHistory}}</p>
-        {{/if}}
-        {{#if character.personalLife}}
-        <h3>Personal Life</h3>
-        <p>{{character.personalLife}}</p>
-        {{/if}}
-=======
-    <div class="container">
+    <div class="container" id="wholeViewPage">
         <div class="card">
             <div class="card-body">
                 <h2>{{character.name}}</h2>
@@ -96,7 +76,6 @@
                 {{/if}}
                 <h3>First Appearance</h3>
                 <p>{{character.firstAppearance}}</p>
->>>>>>> d9b46133dd84ece43a9de9316049d335964263c1
 
                 {{#unless character.approved}}
                 <form action="/api/approve/{{character.name}}?_method=PUT" method="POST">
