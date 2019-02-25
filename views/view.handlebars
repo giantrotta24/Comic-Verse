@@ -19,7 +19,8 @@
                     <a class="nav-link" id="navs" href="/villain">Villains</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Dropdown
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropMenu">
@@ -53,28 +54,35 @@
         </div>
     </nav>
     <div class="container">
-        <h2>{{character.name}}</h2>
-        {{#if character.secretIdentity}}
-        <h3>Secret Identity</h3>
-        <p>{{character.secretIdentity}}</p>
-        {{/if}}
-        {{#if character.earlyLife}}
-        <h3>Early Life</h3>
-        <p>{{character.earlyLife}}</p>
-        {{/if}}
-        {{#if character.currentHistory}}
-        <h3>Current History</h3>
-        <p>{{character.currentHistory}}</p>
-        {{/if}}
-        {{#if character.personalLife}}
-        <h3>Personal Life</h3>
-        <p>{{character.personalLife}}</p>
-        {{/if}}
+        <div class="card">
+            <div class="card-body">
+                <h2>{{character.name}}</h2>
+                <img src="{{character.image}}" name="characterImage" width="240" height="240" class="img-circle pb-2">
+                {{#if character.secretIdentity}}
+                <h3>Secret Identity</h3>
+                <p>{{character.secretIdentity}}</p>
+                {{/if}}
+                {{#if character.earlyLife}}
+                <h3>Early Life</h3>
+                <p>{{character.earlyLife}}</p>
+                {{/if}}
+                {{#if character.currentHistory}}
+                <h3>Current History</h3>
+                <p>{{character.currentHistory}}</p>
+                {{/if}}
+                {{#if character.publisher}}
+                <h3>Publisher</h3>
+                <p>{{character.publisher}}</p>
+                {{/if}}
+                <h3>First Appearance</h3>
+                <p>{{character.firstAppearance}}</p>
 
-        {{#unless character.approved}}
-        <form action="/api/approve/{{character.name}}?_method=PUT" method="POST">
-            <button type="submit" class="btn btn-danger"> {{character.name}}</button>
-        </form>
-        {{/unless}}
+                {{#unless character.approved}}
+                <form action="/api/approve/{{character.name}}?_method=PUT" method="POST">
+                    <button type="submit" class="btn btn-danger"> {{character.name}}</button>
+                </form>
+                {{/unless}}
+            </div>
+        </div>
     </div>
 </div>
