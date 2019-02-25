@@ -67,8 +67,37 @@ module.exports = (app) => {
       fill = "villain";
       res.redirect("/view/" + fill + "/" + results.name);
     };
-    console.log(results);
-    // return res.json(results)
+  });
+
+  app.post("/api", (req, res) => {
+    if (req.body.Hero) {
+      db.Heroes.create({
+        name: req.body.name,
+        secretIdentity: req.body.secretIdentity,
+        earlyLife: req.body.earlyLife,
+        currentHistory: req.body.currentHistory,
+        publisher: req.body.publisher,
+        firstAppearance: req.body.firstAppearance,
+        image: req.body.image
+      }).then((results) => {
+        // res.json(results);
+        res.redirect("/view/hero/" + results.name);
+      });
+    }
+    else if (req.body.Villain) {
+      db.Villains.create({
+        name: req.body.name,
+        secretIdentity: req.body.secretIdentity,
+        earlyLife: req.body.earlyLife,
+        currentHistory: req.body.currentHistory,
+        publisher: req.body.publisher,
+        firstAppearance: req.body.firstAppearance,
+        image: req.body.image
+      }).then((results) => {
+        // res.json(results);
+        res.redirect("/view/villain/" + results.name);
+      });
+    }
   });
 
   app.post("/api/heroes", (req, res) => {
@@ -77,7 +106,9 @@ module.exports = (app) => {
       secretIdentity: req.body.secretIdentity,
       earlyLife: req.body.earlyLife,
       currentHistory: req.body.currentHistory,
-      personalLife: req.body.personalLife
+      publisher: req.body.publisher,
+      firstAppearance: req.body.firstAppearance,
+      image: req.body.image
     }).then((results) => {
       res.json(results);
     });
@@ -89,16 +120,12 @@ module.exports = (app) => {
       secretIdentity: req.body.secretIdentity,
       earlyLife: req.body.earlyLife,
       currentHistory: req.body.currentHistory,
-      personalLife: req.body.personalLife
+      publisher: req.body.publisher,
+      firstAppearance: req.body.firstAppearance,
+      image: req.body.image
     }).then((results) => {
       res.json(results);
     });
   });
 
-  // Delete an example by id
-  // app.delete("/api/examples/:id", function(req, res) {
-  //   db.Example.destroy({ where: { id: req.params.id } }).then(function(dbExample) {
-  //     res.json(dbExample);
-  //   });
-  // });
 };

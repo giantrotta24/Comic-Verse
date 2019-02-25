@@ -19,12 +19,12 @@ $("#add-btn").on("click", function (event) {
     // points from force-points input
     currentHistory: $("#currentHistory").val().
       trim(),
-    personalLife: $("#personalLife").val().
+    publisher: $("#publisher").val().
       trim()
   };
 
   // send an AJAX POST-request with jQuery
-  $.post("/api/heroes", newCharacter).
+  $.post("/api/villains", newCharacter).
     // on success, run this callback
     then((data) => {
       // log the data we found
