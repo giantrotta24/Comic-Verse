@@ -52,8 +52,8 @@
             </div>
         </div>
     </nav>
-    <div class="container">
-        <h1>First Pag Add</h1>
+    {{!-- <div class="container"> --}}
+        {{!-- <h1>First Pag Add</h1>
         <div class="row">
             {{#each villains}}
                 {{#if approved}}
@@ -61,16 +61,25 @@
                 {{/if}}
             {{/each}}
         </div>
-    </div>       
+    </div>        --}}
         
-    <div class="container">
-        <h1>Second Page Add</h1>
+    <div class="container" id="villainsPage">
+        <div class="container">
+        <p id="villainsIndex">VILLAIN'S INDEX</p>
         <div class="row">
+             <ul class="navbar-nav">
             <div class="panel list-group">
+                <li class="nav-item">
                 {{#each villains}}
                     {{#if approved}}
-                        <a id="/view/villain/{{this.name}}"></a>
-                        <button class="list-group-item" data-toggle="collapse" data-target="#item-1" data-parent="#accordion"><strong>{{this.name}}</strong></button>
+                     <nav class="nav">
+                        <div id="villainStylingBoxes">
+                            <a id="/view/villain/{{this.name}}"></a>
+                            <button class="list-group-item" data-toggle="collapse" data-target="#item-1" data-parent="#accordion"><strong>{{this.name}}</strong></button>
+                        </div>
+                    </nav>
+                </li>
+            </ul>
                         <div id="item-1" class="collapse">
                             No. What is on second.
                         </div>
@@ -78,6 +87,7 @@
                 {{/each}}
             </div>
         </div>
+    </div>
     </div>
 </div>
 <script>

@@ -14,7 +14,7 @@ body{
  #home:hover, #navs:hover, #navbarDropdown:hover, #drops:hover, #smallNavs:hover{
   background-color: rgb(45, 40, 40);
   color:  #3ef43e;
-  font-size: 40px;
+  font-size: 35px;
 }
 
 #styleNavbarBtn:hover{
@@ -33,13 +33,13 @@ body{
   padding-bottom: 20px;
   color: black; 
 } 
+
+/* that is finally in a good position. No lags or spasms in
+some sizes of the browser window no touchy */
 #styleNavbarForm:hover{
   /* margin: 10px; */
   padding-top: 30px;
-  padding-right: 30px; 
   padding-bottom: 30px
-
-  /* padding-bottom: 100px; */
 }
 
 /* #styleNavbarBtn{
@@ -75,6 +75,15 @@ a:hover{
   height: 25px;
   -webkit-filter: drop-shadow(5px 5px 5px rgb(26, 25, 25));
   filter: drop-shadow(5px 5px 5px rgb(24, 23, 23));
+}
+#backToHeroesIndex, #backToVillainsIndex{
+  font-size: 19px;
+  float: right;
+  color:  #10ab10;
+}
+#backToHeroesIndex:hover, #backToVillainsIndex:hover{
+font-size: 30px;
+color:  #27df27;
 }
 
 #randomHero {
@@ -192,12 +201,12 @@ a:hover{
 
 
 #heroAndVillainDiv{
-  /* z-index: -1; */
+  /* z-index: -1;*/
   background-color:#ffffff9a;
   box-shadow: 0 7px 7px rgba(0, 0, 0, 0.625), 0 12px 40px rgba(0, 0, 0, 0.356);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 
-}
+} 
 
 
 .triviaDiv{
@@ -249,11 +258,14 @@ a:hover{
   color: #00e500;
   font-size: 19px;
 }
+
 .introToClash{
   font-size: 100px;
 }
+
 @media only screen and (max-width: 1000px) {
   #navs, #navbarDropdown {
     font-size: 22px;
   }
 }
+
