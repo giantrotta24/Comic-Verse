@@ -7,3 +7,6 @@
 #heroIndex{
     font-size: 60px;
 }
+#heroStylingBoxes, #villainStylingBoxes{
+    padding: 5px;
+}

@@ -248,11 +248,17 @@ color:  #27df27;
   color: #00e500;
   font-size: 19px;
 }
+
 .introToClash{
   font-size: 100px;
 }
+
 @media only screen and (max-width: 1000px) {
   #navs, #navbarDropdown {
     font-size: 22px;
   }
+}
+
+#heroStylingBoxes{
+  padding-top: 20px;
 }
