@@ -76,7 +76,7 @@ a:hover{
   -webkit-filter: drop-shadow(5px 5px 5px rgb(26, 25, 25));
   filter: drop-shadow(5px 5px 5px rgb(24, 23, 23));
 }
-#backToHeroesIndex, #backToVillainsIndex{
+/* #backToHeroesIndex, #backToVillainsIndex{
   font-size: 19px;
   float: right;
   color:  #10ab10;
@@ -84,7 +84,7 @@ a:hover{
 #backToHeroesIndex:hover, #backToVillainsIndex:hover{
 font-size: 30px;
 color:  #27df27;
-}
+} */
 /* SUPERHERO COLOR ON HOVERING ON THE NAVS (TESTING) */
 /* #home:hover{
   background-color: black;
@@ -259,6 +259,3 @@ color:  #27df27;
   }
 }
 
-#heroStylingBoxes{
-  padding-top: 20px;
-}
