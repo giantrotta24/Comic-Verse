@@ -27,7 +27,7 @@
                         <a class="dropdown-item" id="drops" href="/profile">Profile</a>
                         <a class="dropdown-item" id="drops" href="/editprofile">Edit Profile</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" id="drops" href="#">Log Out</a>
+                        <a class="dropdown-item" id="drops" href="/logout">Log Out</a>
                         {{!-- <a class="dropdown-item" id="drops" href="#">Contact-Us</a> --}}
                     </div>
                 </li>
@@ -59,6 +59,7 @@
         </div> --}}
         <div class="card">
             <div class="card-body">
+
                 {{!-- I tried everything to not make anything inline but it was literally impossible so for now 
                 this is inline css but we can change it anytime we \/\/\/\/want(if we can fix the problem)
                 UPDATE: OK SO CSS STYLES WORK ON STYLE.CSS NOT VILLAINS.CSS FOR THE FLOAT
@@ -69,7 +70,9 @@
                  <p><a  id="backToVillainsIndex" href="/villain">BACK TO THE VILLAINS'S INDEX</a></p>
                 
                 <p id="nameOfCharacter">{{character.name}}</p>
+                {{#if character.image}}
                 <img src="{{character.image}}" name="characterImage" width="240" height="240" class="img-circle pb-2">
+                {{/if}}
                 {{#if character.secretIdentity}}
                 <h3 id="firstAppearanceStyle">Secret Identity</h3>
                 <p>{{character.secretIdentity}}</p>
@@ -86,8 +89,10 @@
                 <h3 id="firstAppearanceStyle">Publisher</h3>
                 <p>{{character.publisher}}</p>
                 {{/if}}
+                {{#if character.firstAppearance}}
                 <h3 id="firstAppearanceStyle">First Appearance</h3>
                 <p>{{character.firstAppearance}}</p>
+                {{/if}}
 
                 {{#unless character.approved}}
                 <form action="/api/approve/{{character.name}}?_method=PUT" method="POST">
