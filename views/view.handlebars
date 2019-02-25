@@ -54,9 +54,21 @@
         </div>
     </nav>
     <div class="container" id="wholeViewPage">
+        {{!-- <div id="backToHeroesIndex">
+            <p><a id="backToHeroesIndex" href="/hero" style="float: right;">BACK TO THE HERO'S INDEX</a></p>
+        </div> --}}
         <div class="card">
             <div class="card-body">
-                <h2>{{character.name}}</h2>
+                {{!-- I tried everything to not make anything inline but it was literally impossible so for now 
+                this is inline css but we can change it anytime we \/\/\/\/want(if we can fix the problem)
+                UPDATE: OK SO CSS STYLES WORK ON STYLE.CSS NOT VILLAINS.CSS FOR THE FLOAT
+                RIGHTS...IDK ITS BIZARE BUT ILL JUST USE THAT FOR NOW ITS BETTER THAN INLINE  --}}
+                 <p><a id="backToHeroesIndex" href="/hero">BACK TO THE HERO'S INDEX</a></p>
+                 {{!-- <p style="float:right">OR</p> even that does work well only answer for now is a br --}}
+                 <br/>
+                 <p><a  id="backToVillainsIndex" href="/villain">BACK TO THE VILLAINS'S INDEX</a></p>
+                
+                <p id="nameOfCharacter">{{character.name}}</p>
                 <img src="{{character.image}}" name="characterImage" width="240" height="240" class="img-circle pb-2">
                 {{#if character.secretIdentity}}
                 <h3>Secret Identity</h3>

@@ -52,8 +52,8 @@
             </div>
         </div>
     </nav>
-    <div class="container">
-        <h1>First Pag Add</h1>
+    {{!-- <div class="container"> --}}
+        {{!-- <h1>First Pag Add</h1>
         <div class="row">
             {{#each villains}}
                 {{#if approved}}
@@ -61,10 +61,11 @@
                 {{/if}}
             {{/each}}
         </div>
-    </div>       
+    </div>        --}}
         
-    <div class="container">
-        <h1>Second Page Add</h1>
+    <div class="container" id="villainsPage">
+        <div class="container">
+        <p id="villainsIndex">VILLAIN'S INDEX</p>
         <div class="row">
             <div class="panel list-group">
                 {{#each villains}}
@@ -78,6 +79,7 @@
                 {{/each}}
             </div>
         </div>
+    </div>
     </div>
 </div>
 <script>

@@ -76,7 +76,13 @@ a:hover{
   -webkit-filter: drop-shadow(5px 5px 5px rgb(26, 25, 25));
   filter: drop-shadow(5px 5px 5px rgb(24, 23, 23));
 }
-
+#backToHeroesIndex, #backToVillainsIndex{
+  font-size: 19px;
+  float: right;
+}
+#backToHeroesIndex:hover, #backToVillainsIndex:hover{
+font-size: 30px;
+}
 /* SUPERHERO COLOR ON HOVERING ON THE NAVS (TESTING) */
 /* #home:hover{
   background-color: black;
