@@ -5,19 +5,25 @@ const path = require("path");
 
 module.exports = (app) => {
   // Load index page
-  app.get("/", async(req, res) => {
+  app.get("/", async (req, res) => {
     const heroes = await db.Heroes.findAll({});
     const villains = await db.Villains.findAll({});
+    const facts = await db.Facts.findAll({});
+    const randomFact = Math.floor(Math.random() * facts.length);
     const randomHero = Math.floor(Math.random() * heroes.length);
     const randomVillain = Math.floor(Math.random() * villains.length);
     const randHero = heroes[randomHero];
     const randVillain = villains[randomVillain];
+    const randFact = facts[randomFact];
+    console.log(randFact);
     res.render("index", {
       randHero,
-      randVillain
+      randVillain,
+      randFact
+    }).catch(err => {
+      if (err) throw err;
     });
   });
-
 
   app.get("/hero", (req, res) => {
     db.Heroes.findAll({}).then((superhero_db) => {

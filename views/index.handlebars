@@ -101,31 +101,9 @@
         <div class="w3-content float-none">
             <div class="mySlides w3-container w3-red">
                 <!-- <h1><b>Did You Know?</b></h1> -->
-                <h1><i>He knows Batman is Bruce Wayne, but he doesn’t care.</i></h1>
-                <p>While not explicitly stated in the comic books or any other source material, it has been hinted at
-                    for years that The Joker actually knows that Batman is Bruce Wayne. For example, The Joker has a
-                    habit of targeting anyone close to Batman as well as anyone close to Bruce. He’s even cut off
-                    Alfred’s (Bruce Wayne’s butler) hand once! Many fans speculate that The Joker sees Bruce Wayne as a
-                    mask for Batman (as opposed to the other way around), and would simply be bored to death if either
-                    persona were ever harmed.</p>
+                <h1><i>{{randFact.title}}</i></h1>
+                <p>{{randFact.facts}}</p>
             </div>
-
-            <img class="mySlides" src="../../heroPics/jokerHa.jpeg" style="width: 350px;
-            height: 430px;">
-
-            <div class="mySlides w3-container w3-xlarge w3-white w3-card-4">
-                <h1>Bane Broke Batman Back,</h1>
-                <p>After deducing Batman's secret identity and invading the sanctity of Wayne Manor and the Batcave,
-                    Bane not only defeated Batman, but broke his back, leaving him crippled and wheelchair-bound.
-                    Helpless, Bruce Wayne left his costume and crime-fighting duties to Jean Paul Valley and set out on
-                    an arduous quest to regain his strength and will to fight. Eventually, after much rehabilitation and
-                    training with the beautiful but deadly Lady Shiva, Wayne returned to Gotham to reclaim the mantle of
-                    the Dark Knight.</p>
-
-            </div>
-
-            <img class="mySlides" src="../../heroPics/batmanHoldingCatWoman.jpeg" style="width: 350px;
-            height: 430px;">
         </div>
     </div>
     <!-- END OF TRIVIA SECTION -->
@@ -166,34 +144,6 @@
 
 <!-- SCRIPT OF THE SLIDESHOWS OF THE COVER AND TRIVIA SECTIONS(WE CAN MOVE IT SOMEWHERE ELSE IN THE FUTUTE) -->
 <script>
-    
-    var slideIndex = 0;
-    carousel();
-
-    function carousel() {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > x.length) { slideIndex = 1 }
-        x[slideIndex - 1].style.display = "block";
-        setTimeout(carousel, 11000);
-    }
-    var slideIndex2 = 0;
-    carousel2();
-    function carousel2() {
-        var i;
-        var x = document.getElementsByClassName("mySlides2");
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        slideIndex2++;
-        if (slideIndex2 > x.length) { slideIndex2 = 1 }
-        x[slideIndex2 - 1].style.display = "block";
-        setTimeout(carousel2, 3500);
-    }
 
     //im going to make a randomizer so everytime we reload the page it
     //shows a new hero and villain
