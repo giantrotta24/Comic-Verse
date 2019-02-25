@@ -3,7 +3,7 @@
     <!-- Content here -->
     <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
         <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#divBar"
+        <button class="navbar-toggler btn btn-outline-success" id="styleNavbarBtn" type="button" data-toggle="collapse" data-target="#divBar"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -45,10 +45,12 @@
                     <a class="nav-link" id="smallNavs" href="/signup">SIGN-UP</a>
                 </li>
             </ul>
+            <div id="styleNavbarForm"></div>
             <form class="form-inline my-2 my-lg-0" action="/api" method="GET">
-                <input class="form-control mr-sm-2" type="search" id="name" name="name" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <input class="form-control mr-sm-2" id="styleNavSearchBar" type="search" id="name" name="name" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" id="styleNavSeachButton" type="submit">Search</button>
             </form>
+            </div>
         </div>
     </nav>
     <br />
