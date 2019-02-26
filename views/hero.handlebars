@@ -58,7 +58,7 @@
 </div>
 </nav>
 <div class="container" id="indexOfAllHeroes">
-    <div class="container">
+    {{!-- <div class="container">
         {{!-- <h1>First Pag Add</h1>
         <div class="row">
             {{#each heroes}}
@@ -73,24 +73,24 @@
             <p id="heroIndex">Hero's Index</p>
             <div class="row">
                 <ul class="navbar-nav">
+                    {{#each heroes}}
+                    {{#if approved}}                    
                     <li class="nav-item">
-                        {{#each heroes}}
-                        {{#if approved}}
                         <nav class="nav">
                             {{!-- <div id="heroStylingBoxes"> --}}
                                 <a class="nav-link" id="/view/hero/{{this.name}}"></a>
-                                <button class="list-group-item btn btn-outline-info" id="heroStylingBoxes" data-toggle="collapse"
-                                    data-target="#item-1"
-                                    data-parent="#accordion"><strong>{{this.name}}</strong></button>
+                                <button class="list-group-item btn btn-outline-info" id="heroStylingBoxes" data-toggle="collapse" data-target="#item-1" data-parent="#accordion">
+                                    <strong>{{this.name}}</strong>
+                                </button>
                             {{!-- </div> --}}
                         </nav>
                     </li>
+                    {{/if}}
+                    {{/each}}                    
                 </ul>
                 <div id="item-1" class="collapse">
                     No. What is on second.
                 </div>
-                {{/if}}
-                {{/each}}
             </div>
         </div>
     </div>
