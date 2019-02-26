@@ -1,36 +1,35 @@
 
 /* ALOT OF SELECTOR/PROPS SO MAKE A NEW FILE ******************** */
-body {
+body{
   padding-top: 80px;
-  margin-top: 20px;
   /* padding-bottom: 70px; */
   padding-bottom: 80px;
   font-family: 'Bangers';font-size: 22px;
+
 }
 
 /* basically the far bottom of the home page. Getting it some breathing room*/
-#heroAndVillainDiv {
+#heroAndVillainDiv{
   padding: 40px;
 } 
 
 /* hover makes font bigger than normal */
- #home:hover, #navs:hover, #navbarDropdown:hover, #drops:hover, #smallNavs:hover {
+ #home:hover, #navs:hover, #navbarDropdown:hover, #drops:hover, #smallNavs:hover{
   background-color: rgb(45, 40, 40);
   color:  #3ef43e;
   font-size: 35px;
 }
 
-#styleNavbarBtn:hover {
+#styleNavbarBtn:hover{
   width: 70px;
   height: 40px;
   color:  #3ef43e;
 }
 
-/* #styleNavSearchBar:hover {
+/* #styleNavSearchBar:hover{
   width: 460px;
   height: 50px;
 }*/
-
 
 #styleNavSeachButtonHome:hover{
   width: 75px;
@@ -45,13 +44,13 @@ body {
 
 /* that is finally in a good position. No lags or spasms in
 some sizes of the browser window no touchy */
-#styleNavbarForm:hover {
+#styleNavbarForm:hover{
   /* margin: 10px; */
   padding-top: 30px;
   padding-bottom: 30px
 }
 
-/* #styleNavbarBtn {
+/* #styleNavbarBtn{
   -webkit-transition: color 0.2s ease-out;
   -moz-transition: color 0.2s ease-out;
   -o-transition: color 0.2s ease-out;
@@ -59,7 +58,10 @@ some sizes of the browser window no touchy */
   transition: color 0.2s ease-out;
 } */
 
-#home:hover {
+#welcomeComicVerse{
+  margin-bottom: 30px;
+}
+#home:hover{
   color: rgb(159, 237, 232);
 }
 
@@ -67,16 +69,16 @@ some sizes of the browser window no touchy */
   line-height: 2.5;
 }
 
-/* img:hover {
+/* img:hover{
   opacity: 0;
 } */
 
-a {
+a{
   color:  #00e500;
 
 }
 
-a:hover {
+a:hover{
   color: rgb(215, 18, 87);
 }
 
@@ -88,13 +90,13 @@ a:hover {
   filter: drop-shadow(5px 5px 5px rgb(24, 23, 23));
 }
 
-#backToHeroesIndex, #backToVillainsIndex {
+#backToHeroesIndex, #backToVillainsIndex{
   font-size: 19px;
   float: right;
   color:  #10ab10;
 }
 
-#backToHeroesIndex:hover, #backToVillainsIndex:hover {
+#backToHeroesIndex:hover, #backToVillainsIndex:hover{
 font-size: 30px;
 color:  #27df27;
 }
@@ -108,18 +110,18 @@ color:  #27df27;
   filter: drop-shadow(5px 5px 5px rgb(24, 23, 23));
 }
 
-.characterImage {
+#randomVillain {
+  width: 250px;
   height: 250px;
-  width: auto;
 }
 
 /* SUPERHERO COLOR ON HOVERING ON THE NAVS (TESTING) */
-/* #home:hover {
+/* #home:hover{
   background-color: black;
   color: rgb(255,242,0);
 }
 
-#heroOnNav:hover {
+#heroOnNav:hover{
   background-color:rgb(230, 60, 71);
   color:rgb(39, 50, 123);
 }
@@ -129,24 +131,24 @@ color:  #27df27;
   color: #16ff16;
 }
 
-#clashOnNav:hover {
+#clashOnNav:hover{
   background-color: rgb(165,24,24);
   color: rgb(230, 233, 64);
   
 } */
-/* #heroAndVillainIcons {
+/* #heroAndVillainIcons{
   width: 25px;
   height: 25px;
   -webkit-filter: drop-shadow(5px 5px 5px rgb(77, 71, 71));
   filter: drop-shadow(5px 5px 5px rgb(70, 65, 65));
 } /
 
-#heroAndVillainIcons:hover {
+#heroAndVillainIcons:hover{
   width: 35px;
   height: 35px;
 } */
 
-.superSizer {
+.superSizer{
   background-image: url("/images/heroPics/indexbackgroundAgain.jpg");
   width: 100%;
   height: 100%;
@@ -160,7 +162,7 @@ color:  #27df27;
   top: 0;
 }
 
-.HeroPageSuperSizer {
+.HeroPageSuperSizer{
   background-image: url("/images/villianPics/villainBackgroundGround.jpg");
   width: 100%;
   height: 100%;
@@ -174,7 +176,7 @@ color:  #27df27;
   top: 0;
 }
 
-.VillainPageSuperSizer {
+.VillainPageSuperSizer{
   background-image: url("/images/villianPics/villainBGMystery.JPG");
   width: 100%;
   height: 100%;
@@ -188,7 +190,7 @@ color:  #27df27;
   top: 0;
 }
 
-.LoginSuperSizer {
+.LoginSuperSizer{
   /* background-image: url("../../heroPics/backgroundComicsMarvel.jpeg"); */
   background-image: url("/images/heroPics/loginComicBackground.jpg");
   width: 100%;
@@ -203,7 +205,7 @@ color:  #27df27;
   top: 0;
 }
 
-.SignupSuperSizer {
+.SignupSuperSizer{
   /* background-image: url("../../heroPics/backgroundComicsMarvel.jpeg"); */
   background-image: url("/images/heroPics/signupBackground.jpg");
   width: 100%;
@@ -218,82 +220,78 @@ color:  #27df27;
   top: 0;
 }
 
-.topPageJumbo, .triviaDiv, .card, #profileBGTrans { 
+.topPageJumbo, .triviaDiv, .card, #profileBGTrans{ 
     background-color:#ffffff9a;
     box-shadow: 0 7px 7px rgba(0, 0, 0, 0.646), 0 12px 40px rgba(0, 0, 0, 0.329);
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
-#profileBGTrans { 
+#profileBGTrans{ 
   padding: 30px;
 }
 
-#divOfOneCharacter {
+#divOfOneCharacter{
   background-color:#ffffff9a;
   box-shadow: 0 7px 7px rgba(0, 0, 0, 0.646), 0 12px 40px rgba(0, 0, 0, 0.329);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
-#heroAndVillainDiv {
+#heroAndVillainDiv{
   /* z-index: -1;*/
   background-color:#ffffff9a;
   box-shadow: 0 7px 7px rgba(0, 0, 0, 0.625), 0 12px 40px rgba(0, 0, 0, 0.356);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 } 
 
-#triviHeading {
-  margin-bottom: 10px;
-}
-
-.triviaDiv {
+.triviaDiv{
   padding-top: 25px;
   padding-bottom: 25px;
 }
 
-.mylist {
+.mylist{
   display:none;
   width: 200px;
   height: 300px;
 }
-#login {
+#login{
   color: rgb(0, 0, 0);
 }
 
-#home {
+#home{
   color: rgb(159, 237, 232);
   font-size: 30px;
 }
 
-#divBar {
+#divBar{
   color: #0df20d;
 }
 
-#navs {
+#navs{
   color: #18f418;
   font-size: 30px;
 }
 
-#dropMenu {
+#dropMenu{
   color: #00e500;
   background-color: black;
 }
 
-#navbarDropdown {
+#navbarDropdown{
   color: #12e812;
   font-size: 30px;
 }
 
-#drops {
+#drops{
   color: #00e500;
   background-color: rgb(36, 34, 34);
 }
 
-#smallNavs {
+#smallNavs{
   color: #00e500;
   font-size: 19px;
 }
 
-.introToClash {
+.introToClash{
   font-size: 100px;
 }
 
@@ -301,7 +299,4 @@ color:  #27df27;
   #navs, #navbarDropdown {
     font-size: 22px;
   }
-  /* .ofTheDay {
-    max-width: 80%;
-  } */
 }
