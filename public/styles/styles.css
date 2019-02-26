@@ -2,6 +2,7 @@
 /* ALOT OF SELECTOR/PROPS SO MAKE A NEW FILE ******************** */
 body {
   padding-top: 80px;
+  margin-top: 20px;
   /* padding-bottom: 70px; */
   padding-bottom: 80px;
 }
@@ -29,7 +30,8 @@ body {
   height: 50px;
 }*/
 
-#styleNavSeachButton:hover {
+
+#styleNavSeachButtonHome:hover{
   width: 75px;
   height: 50px;
   font-size: 20px;

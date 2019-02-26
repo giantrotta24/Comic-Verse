@@ -11,8 +11,9 @@
     padding-left: 15px;
     padding-right: 15px;
     /* margin: 5px; */
-    color: rgb(181, 11, 11);
+    background-color: rgb(237, 249, 6);
     font-size: 20px;
+    color:rgb(51, 128, 160)
 }
 #heroStylingBoxes:hover{
     /* width: 70px; */
@@ -23,7 +24,7 @@
     background-color: red;
     font-size: 30px;
 }
-#styleNavSeachButton:hover{
+#styleNavSeachButtonHero:hover{
     width: 75px;
     height: 50px;
     font-size: 20px;
