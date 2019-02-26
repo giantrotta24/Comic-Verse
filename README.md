@@ -1,5 +1,5 @@
 # Comic Verse
-***
+
 ### Application Concept:
 Comic Verse is a full stack website designed to be your one stop destination for all comic book character information. 
 
