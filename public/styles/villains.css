@@ -7,7 +7,16 @@
 #villainsIndex{
     font-size: 60px;
 }
+#villainStylingBoxes{
+    padding-left: 15px;
+    padding-right: 15px;
+    /* margin: 5px; */
+    font-size: 20px;
+
+}
 #villainStylingBoxes:hover{
     /* width: 70px; */
-    height: 90px;
+    color: black;
+    height: 100px;
+    font-size: 30px;
 }

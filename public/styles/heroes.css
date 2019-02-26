@@ -6,12 +6,20 @@
 #heroIndex{
     font-size: 60px;
 }
-#heroStylingBoxes, #villainStylingBoxes{
-    padding: 5px;
-
+#heroStylingBoxes{
+    padding-left: 15px;
+    padding-right: 15px;
+    /* margin: 5px; */
+    color: rgb(181, 11, 11);
+    font-size: 20px;
 }
 #heroStylingBoxes:hover{
     /* width: 70px; */
-    height: 90px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 100px;
+    color:  darkblue;
+    background-color: red;
+    font-size: 30px;
 }
 
