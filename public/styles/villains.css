@@ -12,10 +12,12 @@
     padding-right: 15px;
     /* margin: 5px; */
     font-size: 20px;
+    background-color: rgb(140, 134, 134);
 
 }
 #villainStylingBoxes:hover{
     /* width: 70px; */
+    
     color: black;
     height: 100px;
     font-size: 30px;
