@@ -5,17 +5,19 @@ const db = require("../models");
 module.exports = (app) => {
   // Load index page
   app.get("/", async(req, res) => {
-    const trivia = await db.Facts.findAll({});
+    // const trivia = await db.Facts.findAll({});
     const heroes = await db.Heroes.findAll({});
     const villains = await db.Villains.findAll({});
     const randomHero = Math.floor(Math.random() * heroes.length);
     const randomVillain = Math.floor(Math.random() * villains.length);
     const randHero = heroes[randomHero];
     const randVillain = villains[randomVillain];
-    res.render("index", {
-      trivia,
-      randHero,
-      randVillain
+    db.Facts.findAll({}).then((trivia) => {
+      res.render("index", {
+        trivia,
+        randHero,
+        randVillain
+      });
     });
   });
 

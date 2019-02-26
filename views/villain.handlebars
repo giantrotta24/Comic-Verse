@@ -73,30 +73,26 @@
     <div class="container">
         <p id="villainsIndex">VILLAIN'S INDEX</p>
         <div class="row">
+
             <div class="panel list-group">
                 <ul class="navbar-nav">
+                    {{#each villains}}
+                    {{#if approved}}
                     <li class="nav-item">
-                        {{#each villains}}
-                        {{#if approved}}
                         <nav class="nav">
-
                             <a id="/view/villain/{{this.name}}"></a>
-
-                            <button class="list-group-item btn btn-outline-danger" id="villainStylingBoxes"
-                                data-toggle="collapse" data-target="#item-1"
-                                data-parent="#accordion"><strong>{{this.name}}</strong></button>
-
+                            <button class="list-group-item btn btn-outline-danger" id="villainStylingBoxes" data-toggle="collapse" data-target="#item-1" data-parent="#accordion">
+                                <strong>{{this.name}}</strong>
+                            </button>
                         </nav>
                     </li>
+                    {{/if}}
+                    {{/each}}
                 </ul>
             </div>
-
-
             <div id="item-1" class="collapse">
                 No. What is on second.
             </div>
-            {{/if}}
-            {{/each}}
         </div>
     </div>
 </div>
