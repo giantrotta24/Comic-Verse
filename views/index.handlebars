@@ -99,11 +99,11 @@
 
     <!-- THE COMIC TRIVIA SECTION -->
     <div class="container triviaDiv">
-        <h2 class="w3-center">Comic Trivia</h2>
+        <h1 class="w3-center" id="triviaHeading">Comic Trivia</h1>
         <div class="w3-content float-none">
             {{#each trivia}}
             <div class="mySlides w3-container w3-red">
-                <h1>{{this.title}}</h1>
+                <h2>{{this.title}}</h2>
                 <p>{{this.fact}}</p>
             </div>
             {{/each}}        
@@ -122,20 +122,26 @@
             </div>
         </div>
         <div class="container" id="bothCardsHV">
-            <div class="card" style="width: 22rem; float: left;">
-                <img class="card-img-top" id="randomHero" src="{{randHero.image}}" alt="Card image cap">
-                <div class="card-body" style="width: 22rem; float: left;">
-                    <h2>{{randHero.name}}</h2>
-                    <p class="card-text">{{randHero.currentHistory}}</p>
-                    <a href="/view/hero/{{randHero.name}}">Go to Bio</a>
+            <div class="row justify-content-center">
+                <div class="col-5">
+                    <div class="card">
+                        <img class="card-img-top" id="randoms" src="{{randHero.image}}" alt="">
+                        <div class="card-body">
+                            <h2>{{randHero.name}}</h2>
+                            <p class="card-text">{{randHero.currentHistory}}</p>
+                            <a href="/view/hero/{{randHero.name}}">Go to Bio</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="card" style="width: 22rem; float: right;">
-                <img class="card-img-top" id ="randomVillain" src="{{randVillain.image}}" alt="Card image cap">
-                <div class="card-body" style="width: 20rem; float: left;">
-                    <h2>{{randVillain.name}}</h2>
-                    <p class="card-text">{{randVillain.currentHistory}}</p>
-                    <a href="/view/villain/{{randVillain.name}}">Go to Bio</a>
+                <div class="col-5">
+                    <div class="card">
+                        <img class="card-img-top" id="randoms" src="{{randVillain.image}}" alt="">
+                        <div class="card-body">
+                            <h2>{{randVillain.name}}</h2>
+                            <p class="card-text">{{randVillain.currentHistory}}</p>
+                            <a href="/view/villain/{{randVillain.name}}">Go to Bio</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -145,7 +151,7 @@
 
 
 <!-- SCRIPT OF THE SLIDESHOWS OF THE COVER AND TRIVIA SECTIONS(WE CAN MOVE IT SOMEWHERE ELSE IN THE FUTUTE) -->
-<script>
+{{!-- <script>
 
     //im going to make a randomizer so everytime we reload the page it
     //shows a new hero and villain
@@ -226,6 +232,6 @@
     console.log(heroObject[RandHero].firstAppearance);
     });
     
-</script>
+</script> --}}
 
 <script type="text/javascript" src="/js/carousel.js"></script>
