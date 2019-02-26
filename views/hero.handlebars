@@ -55,74 +55,37 @@
                     type="submit">Search</button>
             </form>
         </div>
+    </nav>    
 </div>
-</nav>
-<div class="container" id="indexOfAllHeroes">
-    {{!-- <div class="container">
-        {{!-- <h1>First Pag Add</h1>
-        <div class="row">
-            {{#each heroes}}
-                {{#if approved}}
-                    <a href="accordion.html?#{{this.name}}">{{this.name}}</a>
-                {{/if}}
-            {{/each}}
-        </div>
-    </div> --}}
 
-        <div class="container">
-            <p id="heroIndex">Hero's Index</p>
-            <div class="row">
-                <ul class="navbar-nav">
-                    {{#each heroes}}
-                    {{#if approved}}                    
-                    <li class="nav-item">
-                        <nav class="nav">
+<div class="container" id="indexOfAllHeroes">
+    <div class="container">
+        <p id="heroIndex">Hero's Index</p>
+        <div class="row">
+            {{!-- <div class="panel list-group"> --}}
+                <nav class="nav">                
+                    <ul class="navbar-nav flex-md-row">
+                        {{#each heroes}}
+                        {{#if approved}}                    
+                        <li class="nav-item">        
                             {{!-- <div id="heroStylingBoxes"> --}}
-                                <a class="nav-link" id="/view/hero/{{this.name}}"></a>
+                            <a class="nav-link" href="/view/hero/{{this.name}}">
                                 <button class="list-group-item btn btn-outline-info" id="heroStylingBoxes" data-toggle="collapse" data-target="#item-1" data-parent="#accordion">
                                     <strong>{{this.name}}</strong>
                                 </button>
-                            {{!-- </div> --}}
-                        </nav>
-                    </li>
-                    {{/if}}
-                    {{/each}}                    
-                </ul>
-                <div id="item-1" class="collapse">
+                            </a>
+                            {{!-- </div> --}}                        
+                        </li>
+                        {{/if}}
+                        {{/each}}                    
+                    </ul>
+                </nav>
+                {{!-- <div id="item-1" class="collapse">
                     No. What is on second.
-                </div>
+                </div> --}}
             </div>
         </div>
     </div>
-
-    <div class="container">
-        <div class="row">
-            {{#each heroes}}
-            {{#if approved}}
-            <a href="/view/hero/{{this.name}}">{{this.name}}</a>
-            {{/if}}
-            {{/each}}
-        </div>
-    </div>
 </div>
-</div>
-<script>
-    //
-    // accordionExpand.js
-    //
-    // Checks for hash in url and
-    // expands an accordion list
-    // =============================
-    jQuery(document).ready(function ($) {
 
-        var hash = window.location.hash, // Hash from the url
-            accordionGroup = $('.panel.list-group'), // List groups
-            accordionExists = accordionGroup.length;
-
-        // If url fragment and accordion both exist...
-        if (hash && accordionExists) {
-            // Find the button sibling of the anchor and click it
-            accordionGroup.find(hash).siblings('button.list-group-item').click();
-        }
-    });
-</script>
+<script type="text/javascript" src="/js/accordion.js"></script>
