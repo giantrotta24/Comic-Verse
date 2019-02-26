@@ -30,4 +30,5 @@ Comic Verse is a full stack website designed to be your one stop destination for
 ***
 ### Deployed Site
 [Comic Verse](https://comicverse.herokuapp.com/)    
+[Presentation](https://docs.google.com/presentation/d/1ipKj0_pzjn_Hb8TcS2quezZBVnqXKI2ADj1fiWE6DjE/edit#slide=id.p)    
 
