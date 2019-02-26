@@ -5,6 +5,7 @@ body {
   margin-top: 20px;
   /* padding-bottom: 70px; */
   padding-bottom: 80px;
+  font-family: 'Bangers';font-size: 22px;
 }
 
 /* basically the far bottom of the home page. Getting it some breathing room*/
@@ -66,11 +67,6 @@ some sizes of the browser window no touchy */
   line-height: 2.5;
 }
 
-body {
-  font-family: 'Bangers';font-size: 22px;
-  
-}
-
 /* img:hover {
   opacity: 0;
 } */
@@ -104,8 +100,12 @@ color:  #27df27;
 }
 
 #randoms {
-  height: 100%;
-  width: auto;
+  height: auto;
+  width: 76%;
+  margin-left: 12%;
+  margin-right: 12%;
+  -webkit-filter: drop-shadow(5px 5px 5px rgb(26, 25, 25));
+  filter: drop-shadow(5px 5px 5px rgb(24, 23, 23));
 }
 
 .characterImage {
