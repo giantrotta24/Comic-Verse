@@ -33,8 +33,11 @@ body{
   height: 50px;
   font-size: 20px;
   padding-bottom: 20px;
-  color: black; 
-}
+  /* color: black; */
+  background-color: rgb(97, 21, 97);
+  color:  #3ef43e; 
+} 
+
 
 /* that is finally in a good position. No lags or spasms in
 some sizes of the browser window no touchy */
