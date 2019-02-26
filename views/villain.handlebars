@@ -3,7 +3,9 @@
     <!-- Content here -->
     <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
         <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-        <button class="navbar-toggler btn btn-outline-success" id="styleNavbarBtn" type="button" data-toggle="collapse" data-target="#divBar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler btn btn-outline-success" id="styleNavbarBtn" type="button" data-toggle="collapse"
+            data-target="#divBar" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -19,7 +21,8 @@
                     <a class="nav-link" id="navs" href="/villain">Villains</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Dropdown
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropMenu">
@@ -46,15 +49,17 @@
             </ul>
             <div id="styleNavbarForm"></div>
             <form class="form-inline my-2 my-lg-0" action="/api" method="GET">
-                <input class="form-control mr-sm-2" id="styleNavSearchBar" type="search" id="name" name="name" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" id="styleNavSeachButton" type="submit">Search</button>
+                <input class="form-control mr-sm-2" id="styleNavSearchBar" type="search" id="name" name="name"
+                    placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" id="styleNavSeachButton"
+                    type="submit">Search</button>
             </form>
-            </div>
-        
+        </div>
+
     </nav>
-    </div>
-    {{!-- <div class="container"> --}}
-        {{!-- <h1>First Pag Add</h1>
+</div>
+{{!-- <div class="container"> --}}
+{{!-- <h1>First Pag Add</h1>
         <div class="row">
             {{#each villains}}
                 {{#if approved}}
@@ -63,43 +68,39 @@
             {{/each}}
         </div>
     </div>        --}}
-        
-    <div class="container" id="villainsPage">
-        <div class="container">
+
+<div class="container" id="villainsPage">
+    <div class="container">
         <p id="villainsIndex">VILLAIN'S INDEX</p>
         <div class="row">
-             <div class="panel list-group">
-             <ul class="navbar-nav">
-                <li class="nav-item">
-                {{#each villains}}
-                    {{#if approved}}
-                     <nav class="nav">
-                        
+            <div class="panel list-group">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        {{#each villains}}
+                        {{#if approved}}
+                        <nav class="nav">
+
                             <a id="/view/villain/{{this.name}}"></a>
-                            
-                            <button class="list-group-item btn btn-outline-danger" id="villainStylingBoxes" data-toggle="collapse" data-target="#item-1" data-parent="#accordion"><strong>{{this.name}}</strong></button>
-                        
-                    </nav>
-                </li>
-<<<<<<< HEAD
-           </ul>
-           </div>
-=======
+
+                            <button class="list-group-item btn btn-outline-danger" id="villainStylingBoxes"
+                                data-toggle="collapse" data-target="#item-1"
+                                data-parent="#accordion"><strong>{{this.name}}</strong></button>
+
+                        </nav>
+                    </li>
+                </ul>
             </div>
-            </ul>
->>>>>>> 316d729891d1a812b4a4a864e5e2ba21ee09dc3d
-                        <div id="item-1" class="collapse">
-                            No. What is on second.
-                        </div>
-                    {{/if}}
-                {{/each}}
+
+
+            <div id="item-1" class="collapse">
+                No. What is on second.
             </div>
+            {{/if}}
+            {{/each}}
         </div>
     </div>
-<<<<<<< HEAD
-    
-=======
->>>>>>> 316d729891d1a812b4a4a864e5e2ba21ee09dc3d
+</div>
+
 <script>
     //
     // accordionExpand.js
@@ -107,14 +108,14 @@
     // Checks for hash in url and
     // expands an accordion list
     // =============================
-    jQuery(document).ready(function($) {
-                    
-        var hash        = window.location.hash, // Hash from the url
-        accordionGroup  = $('.panel.list-group'), // List groups
-        accordionExists = accordionGroup.length;
-                    
+    jQuery(document).ready(function ($) {
+
+        var hash = window.location.hash, // Hash from the url
+            accordionGroup = $('.panel.list-group'), // List groups
+            accordionExists = accordionGroup.length;
+
         // If url fragment and accordion both exist...
-        if(hash && accordionExists) {
+        if (hash && accordionExists) {
             // Find the button sibling of the anchor and click it
             accordionGroup.find(hash).siblings('button.list-group-item').click();
         }
