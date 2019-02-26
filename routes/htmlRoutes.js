@@ -60,6 +60,10 @@ module.exports = (app) => {
     res.render("add");
   });
 
+  app.get('/editprofile', (req, res) => {
+    res.redirect('/');
+  });
+
   // Render 404 page for any unmatched routes
   app.get("*", (req, res) => {
     res.render("404");
