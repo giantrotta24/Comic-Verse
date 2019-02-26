@@ -52,7 +52,6 @@
             </div>
         </div>
     </nav>
-    <br />
     <!-- INTRO AND SLIDESHOW OF COMICBOOK COVERS -->
     <div class="jumbotron topPageJumbo">
         <img class="mySlides2" src="/images/heroPics/batgirl.jpg">
@@ -73,9 +72,6 @@
     
 
         <h1 class="display-4">COMIC-VERSE</h1>
-        <!-- <p class="lead"></p>
-            <hr class="my-4"> -->
-
 
         <!-- INTRO OF THE HOME-PAGE -->
         <h3>Welcome the COMIC-VERSE!</h3>
@@ -84,21 +80,13 @@
         <h4>VILLIAN - INDEX OF VILLAINS</h4>
         <h4>DROP-DOWN - VIEW YOUR PROFILE OR EDIT YOUR PROFILE</h4>
         <h4>CLASH - COMING SOON</h4>
-        <h4></h4>
-
-        
-
-        {{!-- this is the small icon in jumbotron in home page right under welcome text --}}
-        
+        <h4></h4>        
      </div>
     
     <!-- END OF JUMBOTRON -->
-    <br />
-    <hr>
-    <br />
 
     <!-- THE COMIC TRIVIA SECTION -->
-    <div class="container triviaDiv">
+    <div class="container triviaDiv mt-4">
         <h1 class="w3-center" id="triviaHeading">Comic Trivia</h1>
         <div class="w3-content float-none">
             {{#each trivia}}
@@ -110,19 +98,17 @@
         </div>
     </div>
     <!-- END OF TRIVIA SECTION -->
-    <br />
-    <hr>
-    <br />
+
 
     <!-- HERO AND VILLAIN OF THE DAY SECTION -->
-    <div class="container">
+    <div class="container mt-4">
         <div class="row">
             <div class="col" id="heroAndVillainDiv">
                 <p style="text-align: center; font-size: 70px">FEATURED HERO & VILLAIN</p>
             </div>
         </div>
         <div class="container" id="bothCardsHV">
-            <div class="row justify-content-center">
+            <div class="row justify-content-between">
                 <div class="col-5">
                     <div class="card">
                         <img class="card-img-top" id="randoms" src="{{randHero.image}}" alt="">
