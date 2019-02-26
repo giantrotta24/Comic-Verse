@@ -124,7 +124,7 @@
             </div>
         </div>
         <div class="container" id="bothCardsHV">
-            <div class="d-flex row justify-content-between flex-wrap flex-md-nowrap">
+            <div class="row justify-content-between">
                 <div class="col-5">
                     <div class="card">
                         <img class="card-img-top" id="randoms" src="{{randHero.image}}" alt="">
@@ -150,90 +150,6 @@
     </div>
     <!-- Hero of the day
         Villian of the day -->
-
-
-<!-- SCRIPT OF THE SLIDESHOWS OF THE COVER AND TRIVIA SECTIONS(WE CAN MOVE IT SOMEWHERE ELSE IN THE FUTUTE) -->
-{{!-- <script>
-
-    //im going to make a randomizer so everytime we reload the page it
-    //shows a new hero and villain
-    //(or even make a button that when clicked on just restart a 
-    //randomizer and show two different hero and villain content)
-    $( window ).load(function() {
-    let heroObject = [{
-        name: "Batman",
-        secretIdentity: "Bruce Wayne",
-        earlyLife: "One of the most iconic fictional characters in the world, Batman has dedicated his life to an endless crusade, a war on all criminals in the name of his murdered parents, who were taken from him when he was just a child. Since that tragic night, he has trained his body and mind to near physical perfection to be a self-made Super Hero. He's developed an arsenal of technology that would put most armies to shame. And he's assembled teams of his fellow DC Super Heroes, like the Justice League, the Outsiders and Batman, Incorporated.", 
-        currentHistory: "In DC Rebirth (2016-present), Batman was rebooted starting with a one-shot issue entitled Batman: Rebirth #1 (Aug. 2016).", 
-        publisher:"DC Comics",
-        firstAppearance:  "Detective Comics #27 (March 1939)",
-        //image: "/images/heroPics/batman_randoizer.jpg", 
-        image: "https://upload.wikimedia.org/wikipedia/en/8/87/Batman_DC_Comics.png",
-        approved: true
-    },
-    {
-        name: "Red Robin", 
-        secretIdentity: "Tim Drake",
-        earlyLife: "Tim Drake is the son of Jack and Janet Drake. By the age of nine, Drake had deduced the identities of Batman and Robin as Bruce Wayne and Dick Grayson after witnessing a gymnastic move by Robin that he previously saw Grayson display in the Flying Graysons. Inspired by the heroes' exploits, Tim trained himself in martial arts, acrobatics, detective skills, and scholastics to better himself both physically and intellectually. When Tim reached the age of thirteen, he saw that Batman had grown reckless and violent following the second Robin (Jason Todd)'s murder by the Joker. After his mother's death and his father's paralysis, Drake decided to intervene and Batman eventually enlisted him as the third Robin.",
-        currentHistory: "In DC Rebirth (2016-present), Tim Drake still operates under the Red Robin alias. He gains a new and third overall Red Robin suit similar to the first Robin suit except with two Rs as his logo instead of one.", 
-        publisher:"DC Comics",
-        firstAppearance:   "Batman #436 (August, 1989)",
-        image: "/images/heroPics/robinRandomizer.jpeg",
-        approved: true
-    }];
-        
-
-    let villainObject = [
-    {
-        name:'Bizarro',
-        secretIdentity: null, 
-        earlyLife: "General Dru-Zod had originally created bizarro duplicates of himself to dominate the planet Krypton. The bizarros had no power because they were not under a yellow sun, but they were soldiers ready to kill and die without hesitation. This was the reason why Zod was banished to the Phantom Zone for 25 Krypton sun-cycles. Some 12 years later, totally oblivious to these facts, a scientist on the Earth is demonstrating his newly invented 'duplicating ray' to Superboy, and an accident causes the ray to duplicate the superhero. The copy, quickly labeled ;'Bizarro', is a flawed imitation as it possesses chalky white skin and childlike erratic behavior. Superboy is eventually forced to 'kill' the clone, using the remains of the duplicating machine, which acts like blue kryptonite (as opposed to green kryptonite, Superboy's weakness) on the copy. Years afterward, Superman's arch-foe Lex Luthor recreates the 'duplicating ray' and uses it on the hero, hoping to control the duplicate. The Bizarro that is created, however, is confused, stating: 'Me not human... me not creature... me not even animal! Me unhappy! Me don't belong in world of living people! Me don't know difference between right and wrong — good and evil!' Luthor is arrested by Bizarro for re-creating him, but forgotten as Bizarro attempts to emulate Superman, creating havoc in the city of Metropolis and almost exposing Superman's secret identity as Clark Kent.", 
-        currentHistory: "When Bizarro falls in love with reporter Lois Lane, she uses the duplicating ray on herself to create a 'Bizarro Lois', who is instantly attracted to Bizarro. The Bizarros leave Earth together, determined to find a home where they can be themselves.", 
-        publisher: "DC Comics", 
-        firstAppearance: "Superboy #68 (October 1958)", 
-        image: "/images/heroPics/bizarroRandomizer.jpeg", 
-        approved: true
-    
-   },
-   {
-        name:'Magneto', 
-        secretIdentity:"Erik Magnus Lensherr",
-        earlyLife: "Magneto was born Max Eisenhardt sometime in the late 1920s to a middle-class German-Jewish family. Surviving discrimination and hardship during the Nazi rise to power, the passing of the Nuremberg Laws in 1935, and Kristallnacht, Max and his family fled to Poland where they were captured during the German invasion of Poland and sent to the Warsaw Ghetto. His mother, father, and sister were executed and buried in a mass grave, but Max survived, possibly due to the manifestation of his mutant powers. Magneto's experiences surviving Nazi Germany, Auschwitz, and Vinnytsia would shape his outlook on the situation that mutants face in the Marvel Universe. Determined to keep such atrocities from ever being committed against mutantkind, he is willing to use deadly force to protect mutants. He would believe that mutants ('Homo superior') will become the dominant life form on the planet and would set about either creating a homeland on Earth where mutants could live peacefully, or conquering and enslaving humanity in the name of mutantkind.",
-        currentHistory: "During Civil War II, Magneto fought to stop Ulysses and predictive justice, and most recently battled against the altered Captain America and his Secret Empire.",
-        publisher:"Marvel Comics", 
-        firstAppearance:"The X-Men #1 (Sept. 1963)", 
-        image: "/images/heroPics/magnetoRandomizer.jpeg", 
-        approved: true
-    }
-
-    ];
-    //1 declare some lets and consts
-    //2 make this all in a jquery function event
-    //3 I have to extract specific data from a super_heroe db
-    //4 When i get the data, i have to replace it with a the previous content in the same place
-    let RandHero;
-    let RandVillain;
-    for(let i = 0; i < 1; i++){
-        RandHero = Math.floor(Math.random() * heroObject.length);
-        RandVillain = Math.floor(Math.random() * villainObject.length);
-    }
-    
-    //for the random hero pic
-    document.getElementById("randomHero").HTML = '<img src="'+heroObject[RandHero].image+'">'
-    //the heroesContent is working. it is replacing the old content
-    document.getElementById("RandHeroesName").innerHTML = heroObject[RandHero].name;
-    document.getElementById("heroesContent").innerHTML = heroObject[RandHero].earlyLife;
-
-    //for the random VILLAIN pic
-    document.getElementById("randomVillain").HTML = '<img src="'+villainObject[RandHero].image+'">'
-    //the heroesContent is working. it is replacing the old content
-    document.getElementById("RandVillainsName").innerHTML = villainObject[RandVillain].name;
-    document.getElementById("villainsContent").innerHTML = villainObject[RandVillain].earlyLife;
-    
-    //console.log(RandHero, RandVillain);testing over like 50 times its working well
-    console.log(heroObject[RandHero].firstAppearance);
-    });
-    
-</script> --}}
+</div>
 
 <script type="text/javascript" src="/js/carousel.js"></script>
