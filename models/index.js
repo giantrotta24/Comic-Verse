@@ -1,4 +1,6 @@
+/* eslint-disable strict */
 /* eslint-disable prefer-template */
+
 'use strict';
 
 const fs = require('fs');
