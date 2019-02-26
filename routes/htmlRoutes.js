@@ -1,11 +1,11 @@
 /* eslint-disable camelcase */
 /* eslint-disable max-lines-per-function */
 const db = require("../models");
-const path = require("path");
 
 module.exports = (app) => {
   // Load index page
   app.get("/", async(req, res) => {
+    const trivia = await db.Facts.findAll({});
     const heroes = await db.Heroes.findAll({});
     const villains = await db.Villains.findAll({});
     const randomHero = Math.floor(Math.random() * heroes.length);
@@ -13,11 +13,11 @@ module.exports = (app) => {
     const randHero = heroes[randomHero];
     const randVillain = villains[randomVillain];
     res.render("index", {
+      trivia,
       randHero,
       randVillain
     });
   });
-
 
   app.get("/hero", (req, res) => {
     db.Heroes.findAll({}).then((superhero_db) => {

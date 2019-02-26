@@ -13,6 +13,12 @@ module.exports = (app) => {
     });
   });
 
+  app.get("/api/facts", (req, res) => {
+    db.Facts.findAll({}).then((results) => {
+      res.json(results);
+    });
+  });
+
   app.get("/api/:name" , async(req, res) => {
     const hero = await db.Heroes.findOne({ where: { name: req.params.name } });
     const villain = await db.Villains.findOne({ where: { name: req.params.name } });
