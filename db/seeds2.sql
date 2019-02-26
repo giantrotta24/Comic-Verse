@@ -12,35 +12,22 @@ CREATE TABLE facts_list (
 );
 
 INSERT INTO facts_list (title, facts)
-VALUES ("He knows Batman is Bruce Wayne, but he doesn’t care.", "While not explicitly stated in the comic books or any other source material, it has been hinted at
-                    for years that The Joker actually knows that Batman is Bruce Wayne. For example, The Joker has a
-                    habit of targeting anyone close to Batman as well as anyone close to Bruce. He’s even cut off
-                    Alfred’s (Bruce Wayne’s butler) hand once! Many fans speculate that The Joker sees Bruce Wayne as a
-                    mask for Batman (as opposed to the other way around), and would simply be bored to death if either
-                    persona were ever harmed.");
+VALUES ("He knows Batman is Bruce Wayne, but he doesn’t care.", "While not explicitly stated in the comic books or any other source material, it has been hinted at for years that The Joker actually knows that Batman is Bruce Wayne. For example, The Joker has a habit of targeting anyone close to Batman as well as anyone close to Bruce. He’s even cut off Alfred’s (Bruce Wayne’s butler) hand once! Many fans speculate that The Joker sees Bruce Wayne as a mask for Batman (as opposed to the other way around), and would simply be bored to death if either persona were ever harmed.");
 
 INSERT INTO facts_list (title, facts)
-VALUES ("Bane Broke Batman Back", "After deducing Batman's secret identity and invading the sanctity of Wayne Manor and the Batcave,
-                    Bane not only defeated Batman, but broke his back, leaving him crippled and wheelchair-bound.
-                    Helpless, Bruce Wayne left his costume and crime-fighting duties to Jean Paul Valley and set out on
-                    an arduous quest to regain his strength and will to fight. Eventually, after much rehabilitation and
-                    training with the beautiful but deadly Lady Shiva, Wayne returned to Gotham to reclaim the mantle of
-                    the Dark Knight.");
+VALUES ("Bane Broke Batman Back", "After deducing Batman's secret identity and invading the sanctity of Wayne Manor and the Batcave, Bane not only defeated Batman, but broke his back, leaving him crippled and wheelchair-bound. Helpless, Bruce Wayne left his costume and crime-fighting duties to Jean Paul Valley and set out on an arduous quest to regain his strength and will to fight. Eventually, after much rehabilitation and training with the beautiful but deadly Lady Shiva, Wayne returned to Gotham to reclaim the mantle of the Dark Knight.");
 				
 INSERT INTO facts_list (title, facts)
-VALUES ("Cash for Conan", "Back in 1970, Marvel paid $200 an issue to Conan Properties to license Conan for comic books. Part of the reason Barry Smith drew the early issues was that he was a new artist and worked cheaper than Marvel stalwarts John Buscema and Gil Kane. Marvel used his cheaper rate to “recoup” the whopping $200 licensing fee.
-$200 may not seem like much, but with inflation that comes out to $1,284.86 in 2017.");
+VALUES ("Cash for Conan", "Back in 1970, Marvel paid $200 an issue to Conan Properties to license Conan for comic books. Part of the reason Barry Smith drew the early issues was that he was a new artist and worked cheaper than Marvel stalwarts John Buscema and Gil Kane. Marvel used his cheaper rate to “recoup” the whopping $200 licensing fee. $200 may not seem like much, but with inflation that comes out to $1,284.86 in 2017.");
 
 INSERT INTO facts_list (title, facts)
 VALUES ("Comics are for everyone", "Brian Peets, the owner of A-1 Comics in Sacramento, Ca. also played in the NFL! He was a tight end for the Seattle Seahawks and San Francisco 49ers from 1978-81.");
 
 INSERT INTO facts_list (title, facts)
-VALUES ("Comics-4 earth!", "The logo for the Earth-2 comic stores in Los Angeles was designed by artist and writer Jeff Parker.
-Bonus fact - for a time, Geoff Johns co-owned one of the stores.");
+VALUES ("Comics-4 earth!", "The logo for the Earth-2 comic stores in Los Angeles was designed by artist and writer Jeff Parker. Bonus fact - for a time, Geoff Johns co-owned one of the stores.");
 
 INSERT INTO facts_list (title, facts)
-VALUES ("Coloring backwards!", "Marvel’s Origin series was colored direct from the pencils. Penciler Andy Kubert is right-handed, but colorist Richard Isanove is a lefty. Isanove had to scan and flip the pages to color them left-handed. Even though he was using a stylus, he had to match the “brushstroke” of the art. He effectively colored the book backward!
-");
+VALUES ("Coloring backwards!", "Marvel’s Origin series was colored direct from the pencils. Penciler Andy Kubert is right-handed, but colorist Richard Isanove is a lefty. Isanove had to scan and flip the pages to color them left-handed. Even though he was using a stylus, he had to match the “brushstroke” of the art. He effectively colored the book backward!");
 
 INSERT INTO facts_list (title, facts)
 VALUES ("Teamwork makes the dream work", "Wally Wood was a talented but problematic artist. Joe Orlando was a kind-hearted DC editor and artist. When other DC editors refused to work with Wood, Orlando would invite him to the office late at night and they would draw entire short stories for DC anthologies overnight on a flat desk. Orlando would pencil, and Wood would sit across from him and ink the page upside-down, literally chasing him down the page!");
@@ -61,8 +48,7 @@ INSERT INTO facts_list (title, facts)
 VALUES ("Flick!", "In 1940, DC Comics developed its first set of standards and practices. Among the rules, the word “FLICK” was banned, due to fear the lettering could run together and result in an altogether new word.");
 
 INSERT INTO facts_list (title, facts)
-VALUES ("Supermoney", "Jerry Siegel and Joe Shuster’s famous contract with DC sold Superman for $130, plus a 10-year contract to do the book, plus 32.5% to 40% of net proceeds derived from the newspaper strip, plus 5% of all other licensing.
-In 1942 alone, they made $63,776.46 in Superman income, the equivalent of $986,459.35 in 2017 dollars.");
+VALUES ("Supermoney", "Jerry Siegel and Joe Shuster’s famous contract with DC sold Superman for $130, plus a 10-year contract to do the book, plus 32.5% to 40% of net proceeds derived from the newspaper strip, plus 5% of all other licensing. In 1942 alone, they made $63,776.46 in Superman income, the equivalent of $986,459.35 in 2017 dollars.");
 
 INSERT INTO facts_list (title, facts)
 VALUES ("Ghost artist money", "Batman co-creator Bob Kane used legions of ghost artists to crank out his material, but sometimes paid them very handsomely. Kane was paying his artists up to $200 a page for pencils in the 1950s. That’s more than many pencilers make today, and the equivalent of $2,066.71 a page in 2016.");
@@ -98,8 +84,7 @@ INSERT INTO facts_list (title, facts)
 VALUES ("1 year at a time", "Despite the success of Marvel Knights, Jimmy Palmiotti and Joe Quesada’s “research and development” wing of Marvel, Palmiotti and Quesada were offered only 1-year contracts from 1998 until 2003.");
 
 INSERT INTO facts_list (title, facts)
-VALUES ("Always have a backup plan", "Artist Adam Hughes worked at the Heroes World Comics store in Burlington, N.J. When he started drawing The Maze Agency for Comico in 1988, he cut down to two days a week at the store. When he started Justice League of America in 1989, he cut down to one day, but kept the job, always fearful that his art career might disappear at any moment.
-“When my first issue of JLA came out, I unboxed it, put it on the shelves, and then sold it at the register,” he says. “One customer asked ‘Is that the new guy’s first issue?’ I said yes, and asked him what he thought. We thumbed through the issue together and he gave an honest appraisal, never knowing I was the artist.”");
+VALUES ("Always have a backup plan", "Artist Adam Hughes worked at the Heroes World Comics store in Burlington, N.J. When he started drawing The Maze Agency for Comico in 1988, he cut down to two days a week at the store. When he started Justice League of America in 1989, he cut down to one day, but kept the job, always fearful that his art career might disappear at any moment. “When my first issue of JLA came out, I unboxed it, put it on the shelves, and then sold it at the register,” he says. “One customer asked ‘Is that the new guy’s first issue?’ I said yes, and asked him what he thought. We thumbed through the issue together and he gave an honest appraisal, never knowing I was the artist.”");
 
 INSERT INTO facts_list (title, facts)
 VALUES ("The mirage", "Teenage Mutant Ninja Turtles creators Peter Laird and Kevin Eastman’s Mirage Studio was so named because the “studio” was Laird’s living room. The duo wanted to seem larger than they actually were, and the entire studio was a mirage.");
@@ -108,8 +93,7 @@ INSERT INTO facts_list (title, facts)
 VALUES ("Started from the bottom", "To get the money to print Teenage Mutant Ninja Turtles #1, Kevin Eastman applied $500 he got from an income tax return, and a $1000 loan from his uncle Quentin. Peter Laird took $200 out of his bank account. After scrimping and saving, the pair had scraped together enough money to print 3000 copies, and take out one ad in Comic Buyers Guide to launch the book.");
 
 INSERT INTO facts_list (title, facts)
-VALUES ("Relevant memories", "Michael Uslan, producer of the Batman movies, took a tour of DC Comics when he was in the 7th grade. He got autographs from whoever happened to be in the office that day. As an adult, he looked back at his autograph book, and saw that one of the autographs was from…Batman co-creator Bill Finger.
-Yes, Uslan and others on the tour also received a panel of original art - chopped from a full page - on the tour.");
+VALUES ("Relevant memories", "Michael Uslan, producer of the Batman movies, took a tour of DC Comics when he was in the 7th grade. He got autographs from whoever happened to be in the office that day. As an adult, he looked back at his autograph book, and saw that one of the autographs was from…Batman co-creator Bill Finger. Yes, Uslan and others on the tour also received a panel of original art - chopped from a full page - on the tour.");
 
 INSERT INTO facts_list (title, facts)
 VALUES ("Old school art", "In April 2004, Marvel Comics returned a four-foot stack of original art to artist Stan Goldberg, with material dating back to the 1950s.");
@@ -121,8 +105,7 @@ INSERT INTO facts_list (title, facts)
 VALUES ("Art collector", "Longtime Famous Monsters of Filmland editor Forrest J Ackerman collected pulp art and comic art from its earliest days. He had Frank R. Paul originals on the walls of his house, and two Virgil Findlay originals in the bathroom!");
 
 INSERT INTO facts_list (title, facts)
-VALUES ("3 months flat out", "DC’s Catwoman: Selina’s Big Score graphic novel by Darwyn Cooke had a number of guest-artist pinups in the back. They were budgeted at $550 each. Artist Jim Steranko demanded $1000 for his… and a year to do it!
-Editor Mark Chiarello got him $750, and told him he’d have three months like everyone else. Darwyn Cooke paid the difference out of his own pocket to make up the additional $250.");
+VALUES ("3 months flat out", "DC’s Catwoman: Selina’s Big Score graphic novel by Darwyn Cooke had a number of guest-artist pinups in the back. They were budgeted at $550 each. Artist Jim Steranko demanded $1000 for his… and a year to do it! Editor Mark Chiarello got him $750, and told him he’d have three months like everyone else. Darwyn Cooke paid the difference out of his own pocket to make up the additional $250.");
 
 INSERT INTO facts_list (title, facts)
 VALUES ("Tokyo bound", "Famed ’60s-era DC writer John Broome left comics in 1970 after a 25-year career. He became a world traveler, living in France and Israel before finally settling in Japan, taking a English professorship at Tokyo University.");
@@ -131,8 +114,7 @@ INSERT INTO facts_list (title, facts)
 VALUES ("Invaders form beyond the stars!", "Batman co-creator Bill Finger co-wrote the cult classic sci-fi film The Green Slime.");
 
 INSERT INTO facts_list (title, facts)
-VALUES ("Stand up work", "Stan Lee wrote a large part of his Marvel Universe stories while standing. He did this on the balcony his apartment in Manhattan, using the New York skyline as inspiration. He also did it at his home in suburban Hewlett, New York.
-Continue on to Part 2 and Part 3 of Newsarama's Little-Known Facts about Comic Books.");
+VALUES ("Stand up work", "Stan Lee wrote a large part of his Marvel Universe stories while standing. He did this on the balcony his apartment in Manhattan, using the New York skyline as inspiration. He also did it at his home in suburban Hewlett, New York. Continue on to Part 2 and Part 3 of Newsarama's Little-Known Facts about Comic Books.");
 
 INSERT INTO facts_list (title, facts)
 VALUES ("Twist and turn to the right direction", "Artist and one-time Valiant Comics Vice President Bob Layton used to refer to the young artists in the Valiant bullpen as “The Knobs” because he would turn them whichever way he needed to teach them. He also used to ink at the Valiant office while wearing a three-piece suit!");
