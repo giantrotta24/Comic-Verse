@@ -103,9 +103,9 @@ font-size: 30px;
 color:  #27df27;
 }
 
-#randomHero {
-  width: 250px;
-  height: 250px;
+#randoms {
+  height: 100%;
+  width: auto;
 }
 
 #randomVillain {
